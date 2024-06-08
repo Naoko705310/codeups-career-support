@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ja">
+<!-- prefixは、OGPを使用するための宣言 -->
+<head prefix="og: https://ogp.me/ns#">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="robots" content="noindex">
+  <!-- meta情報 -->
+  <title>CodeUps キャリアサポートサイト</title>
+  <meta name="description" content="CodeUpsのキャリアサポートサイトです。">
+  <meta name="keywords" content="">
+  <!-- OGP設定 -->
+  <meta property="og:title" content="CodeUps キャリアサポートサイト - トップページ">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://naoko-test/site/codeups-carrer-support/">
+  <!-- 要確認 本番環境に変更 -->
+  <meta property="og:image" content="https://naoko-test/site/codeups-carrer-support/assets/images/common/career-support-ogp.jpg">
+  <meta property="og:site_name" content="CodeUpsキャリアサポートサイト">
+  <meta property="og:description" content="CodeUpsキャリアサポートサイトです。">
+  <!-- ここからTwitterカードの記述 -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@naoko705310">
+  <!-- ここからFacebookカードの記述 -->
+  <meta property="fb:app_id" content="FacebookアプリID">
+  <!-- ファビコン -->
+  <link rel="icon" href="./assets/images/common//icon.png">
+  <!-- Google フォント -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Noto Sans JP -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+  <!-- poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- JavaScript -->
+  <!-- バージョン確認 -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script defer src="./assets/js/script.js"></script>
+</head>
+<body>
+  <header>
+
+  </header>
+  <main>
+    <section class="contact">
+      <div class="contact__inner inner">
+        <div class="section-title">
+          <h2 class="section-title__main-copy">
+            お問い合わせ
+          </h2>
+          <p class="section_title__sub-copy">
+            contact
+          </p>
+          <!-- お問い合わせフォーム -->
+          <!-- actionで送信先を指定する。PHP工房の場合はmail.phpにする。 -->
+          <form action="mail.php" method="post" id="contact-form" class="contact-form contact-form__layout">
+            <!-- 名前 -->
+            <dl class="contact-form__item">
+              <dt>
+                <label for="name" class="contact-form__heading">
+                  <span>必須</span>
+                  お名前
+                </label>
+              </dt>
+              <dd>
+                <input type="text" id="name" class="input-area input-area--name required" name="name" placeholder="例：山田太郎" autocomplete="name" required>
+                <!-- エラーメッセージ（内容はJSで制御） -->
+                <span class="js-error-required"></span>
+                <p class="name-error">
+                </p>
+              </dd>
+            </dl>
+            <!-- 住所 -->
+            <dl class="contact-form__item">
+              <dt>
+                <label for="address" class="contact-form__heading">
+                  <span>必須</span>
+                  住所
+                </label>
+              </dt>
+              <dd>
+                <input type="text" id="address" class="input-area required" name="address" placeholder="東京都港区" autocomplete="address-line1" required>
+                <!-- エラーメッセージ（内容はJSで制御） -->
+                <span class="js-error-required"></span>
+                <p class="address-error">
+                </p>
+              </dd>
+            </dl>
+            <!-- 会社名 -->
+            <dl class="contact-form__item">
+              <dt>
+                <label for="company-name" class="contact-form__heading">
+                  <span>必須</span>
+                  会社名
+                </label>
+              </dt>
+              <dd>
+                <input type="text" id="company-name" class="input-area required" name="company-name" placeholder="例:株式会社ABC" autocomplete="organization" required>
+                <!-- エラーメッセージ（内容はJSで制御） -->
+                <span class="js-error-required"></span>
+                <p class="company-name-error">
+                </p>
+              </dd>
+            </dl>
+            <!-- メールアドレス -->
+            <dl class="contact-form__item">
+              <dt>
+                <!-- PHP工房を使う際は、idとforは"Email"を指定 -->
+                <label for="Email" class="contact-form__heading">
+                  <span>必須</span>
+                  メールアドレス
+                </label>
+              </dt>
+              <dd>
+                <input type="email" id="Email" class="input-area required" name="Email" placeholder="例:info@abc-company.com" autocomplete="email" required>
+                <!-- エラーメッセージ（内容はJSで制御） -->
+                <span class="js-error-required"></span>
+                <p class="email-error">
+                </p>
+              </dd>
+            </dl>
+            <!-- 電話番号 -->
+            <dl class="contact-form__item">
+              <dt>
+                <label for="tel" class="contact-form__heading">
+                  <span>必須</span>
+                  電話番号
+                </label>
+              </dt>
+              <dd>
+                <input type="text" id="tel" class="input-area required" name="tel" placeholder="例:03002xxxx（ハイフンなし）" autocomplete="tel" required>
+                <!-- エラーメッセージ（内容はJSで制御） -->
+                <span class="js-error-required"></span>
+                <p class="tel-error"></p>
+              </dd>
+            </dl>
+            <!-- 貴社サイトURL -->
+            <dl class="contact-form__item">
+              <dt>
+                <label for="url" class="contact-form__heading">
+                  貴社サイトURL
+                </label>
+              </dt>
+              <dd>
+                <input type="text" id="url" class="input-area" name="url" placeholder="例:https://abc-company.com/">
+                <!-- エラーメッセージ（内容はJSで制御） -->
+                <span class="js-error-required"></span>
+                <p class="url-error"></p>
+              </dd>
+            </dl>
+            <!-- チェックボックス（複数選択可能） -->
+            <!-- 興味のあるトピックを聞く場合→nameにはinterested_topics, idとforはそれぞれtopic-music, topic-art,valueには「音楽関連のトピック」など、具体的な名前を入れる方が推奨される。※JSも書き換えること！！！ -->
+            <dl class="contact-form__item checkbox">
+              <dt>
+                <label class="contact-form__heading">
+                  <span>必須</span>
+                  チェックボックス（複数選択可能）
+                </label>
+              </dt>
+              <dd>
+                <ul class="checkbox__items">
+                  <li class="checkbox__item">
+                    <label for="checkbox-01" class="checkbox-label">
+                      <input id="checkbox-01" class="checkbox-input" type="checkbox" name="checkbox-name" value="チェックボックス01">
+                      <span class="checkbox-label-span">チェックボックス01</span>
+                    </label>
+                  </li>
+                  <li class="checkbox__item">
+                    <label for="checkbox-02" class="checkbox-label">
+                      <input id="checkbox-02" class="checkbox-input" type="checkbox" name="checkbox-name" value="チェックボックス02">
+                      <span class="checkbox-label-span">チェックボックス02</span>
+                    </label>
+                  </li>
+                  <li class="checkbox__item">
+                    <label for="checkbox-03" class="checkbox-label">
+                      <input id="checkbox-03" class="checkbox-input" type="checkbox" name="checkbox-name" value="チェックボックス03">
+                      <span class="checkbox-label-span">チェックボックス03</span>
+                    </label>
+                  </li>
+                  <li class="checkbox__item">
+                    <label for="checkbox-04" class="checkbox-label">
+                      <input id="checkbox-04" class="checkbox-input" type="checkbox" name="checkbox-name" value="チェックボックス04">
+                      <span class="checkbox-label-span">チェックボックス04</span>
+                    </label>
+                  </li>
+                  <li class="checkbox__item">
+                    <label for="checkbox-05" class="checkbox-label">
+                      <input id="checkbox-05" class="checkbox-input" type="checkbox" name="checkbox-name" value="チェックボックス05">
+                      <span class="checkbox-label-span">チェックボックス05</span>
+                    </label>
+                  </li>
+                </ul>
+                <!-- テキスト内容はJSで制御 -->
+                <p class="js-checkbox-error"></p>
+              </dd>
+            </dl>
+            <!-- ラジオボタン -->
+            <!-- 連絡方法→nameにはcontact_method, idとforはそれぞれcontact_email, contact_line, contact_telなど、具体的な名前を入れる方が推奨される。※JSも書き換えること！！！ -->
+            <!-- ラジオボタン（セット１） -->
+            <dl class="contact-form__item radio">
+              <dt>
+                <label class="contact-form__heading">
+                  <span>必須</span>
+                  連絡方法
+                </label>
+              </dt>
+              <dd>
+                <ul class="radio__items">
+                  <li class="radio__item">
+                    <input class="visually-hidden" type="radio" name="radio-name-1" id="radio01" value="ラジオセット1-01">
+                    <label class="radio-label" for="radio01">ラジオセット1-01</label>
+                  </li>
+                  <li class="radio__item">
+                    <input class="visually-hidden" type="radio" name="radio-name-1" id="radio02" value="ラジオセット1-02">
+                    <label class="radio-label" for="radio02">ラジオセット1-02</label>
+                  </li>
+                  <li class="radio__item">
+                    <input class="visually-hidden" type="radio" name="radio-name-1" id="radio03" value="ラジオセット1-03">
+                    <label class="radio-label" for="radio03">ラジオセット1-03</label>
+                  </li>
+                </ul>
+                <!-- テキスト内容はJSで制御 -->
+                <p class="js-radio-error"></p>
+              </dd>
+            </dl>
+            <!-- ラジオボタン（セット２） -->
+            <!-- 複数セットある場合、idは連番にするが、nameはセットごとに付け替える。 -->
+            <dl class="contact-form__item">
+              <dt>
+                <label class="contact-form__heading">
+                  <span>必須</span>
+                  ラジオボタン（セット２）
+                </label>
+              </dt>
+              <dd>
+                <ul class="contact-form__radio radio__items">
+                  <li class="radio__item">
+                    <input class="visually-hidden" type="radio" name="radio-name-2" id="radio04" value="ラジオセット2-01">
+                    <label class="radio-label" for="radio04">ラジオセット2-01</label>
+                  </li>
+                  <li class="radio__item">
+                    <input class="visually-hidden" type="radio" name="radio-name-2" id="radio05" value="ラジオセット2-02">
+                    <label class="radio-label" for="radio05">ラジオセット2-02</label>
+                  </li>
+                  <li class="radio__item">
+                    <input class="visually-hidden" type="radio" name="radio-name-2" id="radio06" value="ラジオセット2-03">
+                    <label class="radio-label" for="radio06">ラジオセット2-03</label>
+                  </li>
+                  <li class="radio__item">
+                    <input class="visually-hidden" type="radio" name="radio-name-2" id="radio07" value="ラジオセット2-04">
+                    <label class="radio-label" for="radio07">ラジオセット2-04</label>
+                  </li>
+                  <li class="radio__item">
+                    <input class="visually-hidden" type="radio" name="radio-name-2" id="radio08" value="ラジオセット2-05">
+                    <label class="radio-label" for="radio08">ラジオセット2-05</label>
+                  </li>
+                </ul>
+                <!-- テキスト内容はJSで制御 -->
+                <p class="js-radio-error"></p>
+              </dd>
+            </dl>
+            <!-- お問い合わせ内容（テキスト） -->
+            <dl class="contact-form__item">
+              <dt>
+                <label for="message" class="contact-form__heading">
+                  <span>必須</span>
+                  お問い合わせ内容
+                </label>
+              </dt>
+              <dd>
+                <textarea id="message" class="text-area required" name="message" cols="32" rows="8" placeholder="ここにメッセージを書いてください。" required></textarea>
+                <!-- エラーメッセージ（内容はJSで制御） -->
+                <span class="js-error-required"></span>
+              </dd>
+            </dl>
+            <!-- セレクトボックス -->
+            <!-- ※セレクトボックスが複数ある場合は、IDを連番にして分けても良いが、prefectureなど、具体的な内容を表すIDをつけた方が良い。 -->
+            <dl class="contact-form__item">
+              <dt>
+                <label for="prefecture" class="contact-form__heading">
+                  <span>必須</span>
+                  お住まいの地域
+                </label>
+              </dt>
+              <dd>
+                <div class="select-box__wrapper">
+                  <select id="prefecture" class="select-box__items" name="prefecture" required>
+                    <option value="">都道府県</option>
+                    <option value="北海道">北海道</option>
+                    <option value="青森県">青森県</option>
+                    <option value="岩手県">岩手県</option>
+                    <option value="宮城県">宮城県</option>
+                    <option value="秋田県">秋田県</option>
+                    <option value="山形県">山形県</option>
+                    <option value="福島県">福島県</option>
+                    <option value="茨城県">茨城県</option>
+                    <option value="栃木県">栃木県</option>
+                    <option value="群馬県">群馬県</option>
+                    <option value="埼玉県">埼玉県</option>
+                    <option value="千葉県">千葉県</option>
+                    <option value="東京都">東京都</option>
+                    <option value="神奈川県">神奈川県</option>
+                    <option value="新潟県">新潟県</option>
+                    <option value="富山県">富山県</option>
+                    <option value="石川県">石川県</option>
+                    <option value="福井県">福井県</option>
+                    <option value="山梨県">山梨県</option>
+                    <option value="長野県">長野県</option>
+                    <option value="岐阜県">岐阜県</option>
+                    <option value="静岡県">静岡県</option>
+                    <option value="愛知県">愛知県</option>
+                    <option value="三重県">三重県</option>
+                    <option value="滋賀県">滋賀県</option>
+                    <option value="京都府">京都府</option>
+                    <option value="大阪府">大阪府</option>
+                    <option value="兵庫県">兵庫県</option>
+                    <option value="奈良県">奈良県</option>
+                    <option value="和歌山県">和歌山県</option>
+                    <option value="鳥取県">鳥取県</option>
+                    <option value="島根県">島根県</option>
+                    <option value="岡山県">岡山県</option>
+                    <option value="広島県">広島県</option>
+                    <option value="山口県">山口県</option>
+                    <option value="徳島県">徳島県</option>
+                    <option value="香川県">香川県</option>
+                    <option value="愛媛県">愛媛県</option>
+                    <option value="高知県">高知県</option>
+                    <option value="福岡県">福岡県</option>
+                    <option value="佐賀県">佐賀県</option>
+                    <option value="長崎県">長崎県</option>
+                    <option value="熊本県">熊本県</option>
+                    <option value="大分県">大分県</option>
+                    <option value="宮崎県">宮崎県</option>
+                    <option value="鹿児島県">鹿児島県</option>
+                    <option value="沖縄県">沖縄県</option>
+                  </select>
+                  <!-- エラーメッセージ（内容はJSで制御） -->
+                <span class="js-select-error"></span>
+                </div>
+              </dd>
+            </dl>
+            <!-- 個人情報の取り扱いについて（チェックボックス） -->
+            <dl class="contact-form__item">
+              <dt>
+                <label class="contact-form__heading">
+                  <span>必須</span>
+                  個人情報の取り扱いについて
+                </label>
+              </dt>
+              <dd>
+                <ul class="checkbox__items">
+                  <li class="checkbox__item">
+                    <label for="checkbox-agree" class="checkbox-label">
+                      <input id="checkbox-agree" class="checkbox-input" type="checkbox" name="checkbox-name-agree" value="同意する">
+                      <span class="checkbox-label-span">同意する</span>
+                    </label>
+                  </li>
+                  <li class="checkbox__item">
+                    <p class="checkbox__policy">個人情報の取り扱い方針については
+                      <a href="../policy/index.html" target="_blank">こちら</a>
+                      をご確認下さい。</p>
+                  </li>
+                </ul>
+                <!-- テキスト内容はJSで制御 -->
+                <p class="js-privacy-error"></p>
+              </dd>
+            </dl>
+            <!-- 送信ボタン -->
+            <div class="contact-form__button">
+                <button id="js-submit" class="button--contact" type="submit" value="send">
+                  <span>送信する</span>
+                </button>
+            </div>
+            <div class="contact-form__error">
+              <span id="js-error-message" class="error-message">
+                ※必須項目が入力されていません。入力してください。
+              </span>
+            </div>
+          </form>
+          <!-- お問い合わせフォームここまで -->
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+
+  </footer>
+</body>
+
+</html>

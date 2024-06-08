@@ -1,0 +1,94 @@
+@use "sass:math";
+
+// インナー幅設定
+// コンテンツのインナー幅（最も共通の幅が多い部分）
+$inner: 1240px;
+// ※キュンパス幅ではなくインナーの幅を指す
+
+// 余白
+$padding-pc: 25px;
+$padding-sp: 15px;
+
+////////////////////
+// フォント設定
+////////////////////
+
+$base-font-family: "Noto Sans JP", sans-serif;
+$second-font-family: "Poppins", sans-serif;
+// ※検証ツールでしっかり反映されているか確認する
+
+body {
+  font-family: $base-font-family;
+}
+
+// フォントウェイト
+$regular: 300;
+$normal: 400;
+$bold: 700;
+
+////////////////////
+// 色の指定
+////////////////////
+
+//色指定（共通性のあるものは出来る限り指定すると良い）
+$black: #1f1f1f;
+$white: #ffffff;
+$color-font: #1f1f1f;
+$color-accent: #F6A200;
+$color-logo: #137739;
+
+
+////////////////////
+// お問い合わせフォームの指定
+////////////////////
+
+$contact-border-color:#BCBCBC;
+$check-mark-color:#C94800;
+$error-message-color:#C94800;
+
+
+
+/*フォーム全体の指定*/
+// $form-background-color: #F7FFFC;
+
+/*デフォルト色の指定*/
+// $border-cr-default: #AAAAAA; //デフォルト時のボーダーの色
+// $border-cr: #391E88; //inputのhover or focus時の色
+// $back-cr: #fff;//input（テキスト系）の背景色
+
+// /*サイズ等の指定*/
+// $fz: rem(16);//入力するときのfont-size
+// $padding-und: rem(12);//paddingの指定（上下） inputの内側の余白で使う
+// $padding-lnr: rem(12);//paddingの指定（左右） inputの内側の余白で使う
+// $border-r: rem(20);//border-radius（テキスト系）
+
+// /*ボタン系の指定*/
+// $fz-btn: rem(14);//送信ボタンのfont-size
+// $back-cr-btn: transparent linear-gradient(90deg, #7633a4 0%, #250d65 100%) 0% 0% no-repeat padding-box;//ボタンの背景色
+// $font-cr-btn: white;//ボタンのフォントカラー
+// $padding-und-btn: rem(20);//paddingの指定（上下） btnの内側の余白で使う
+// $padding-lnr-btn: rem(72);//paddingの指定（左右） btnの内側の余白で使う
+// $border-r-btn: rem(50);
+
+// /*ラジオボタンの指定*/
+// $radio-fz: rem(12);//フォントサイズ
+// $radio-size: rem(18);//外枠の幅高さ
+// $radio-bg-cr: #fff;//外枠の背景色
+// $radio-border-cr: #707070;//外枠の色
+// $radio-size-inner: rem(12);//チェックマーク幅高さ
+// $radio-bg-cr-inner: #391E88;//チェックマークの背景色
+// $radio-space: rem(10);//チェックマークと文字の距離
+// $radio-space-betweenRadio: rem(35);//ラジオボタンの間の距離
+
+// /*チェックボックスの指定*/
+// $check-fz: rem(14);//フォントサイズ
+// $check-size: rem(20);//外枠の幅高さ
+// $check-bg-cr: #fff;//外枠の背景色
+// $check-border-cr: #f00;//外枠の色
+// $check-bg-cr-inner: #f00;//チェックマークの背景色
+// $check-space: rem(5);//チェックマークと文字の距離
+// $check-space-betweenRadio: rem(20);//ラジオボタンの間の距離
+// $check-weight: 4px;//チェックマークの線の太さ(px)
+
+// /*テキストエリアの指定*/
+// $textarea-height: rem(255);
