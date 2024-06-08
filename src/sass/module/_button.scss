@@ -1,0 +1,44 @@
+@use "global" as *;
+
+// 基本のボタン（オレンジ）
+.button {
+  width: rem(179);
+  font-family: $base-font-family;
+  font-size: rem(16);
+  color: $white;
+  font-weight: $normal;
+  line-height: calc(24/16);
+  display: inline-block;
+  text-align: center;
+  padding: rem(12) 0;
+  background-color: $color-accent;
+  border-radius: rem(30);
+  transition: .3s;
+}
+
+.button span {
+  padding-right: rem(42);//16+26
+  position: relative;
+}
+
+// 擬似要素で矢印配置
+.button span:after {
+  content: "";
+  display: inline-block;
+  width: rem(26);
+  aspect-ratio: 26/26;
+  background-image: url(../images/common/icon-arrow-button.png);
+  background-size: contain;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.button--green {
+  background-color: $color-logo;
+}
+
+.button--green span:after {
+  background-image: url(../images/common/icon-arrow-button-green.png);
+}

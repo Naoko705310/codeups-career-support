@@ -40,13 +40,197 @@
   <script defer src="./assets/js/script.js"></script>
 </head>
 <body>
-  <header>
+  <header id="header" class="header">
 
   </header>
   <main>
+<section id="top-fv" class="top-fv">
+  <div class="top-fv__inner inner">
+
+    セクションのコンテンツ
+  </div>
+</section>
+<section id="top-about-us" class="top-about-us">
+  <div class="top-about-us__inner inner">
+    <div class="top-about-us__section-title section-title">
+      <h2 class="section-title__jp">
+        私たちについて
+      </h2>
+      <span class="section-title__en">
+        about-us
+      </span>
+    </div>
+    セクションのコンテンツ
+  </div>
+</section>
+<section id="top-archievement" class="top-archievement">
+  <div class="top-archievement__inner inner">
+    <div class="top-archievement__section-title section-title">
+      <h2 class="section-title__jp">
+        就職実績
+      </h2>
+      <span class="section-title__en">
+        archievement
+      </span>
+    </div>
+    セクションのコンテンツ
+  </div>
+</section>
+<section id="top-information" class="top-information">
+  <div class="top-information__inner inner">
+    <div class="top-information__section-title section-title">
+      <h2 class="section-title__jp">
+        会社概要
+      </h2>
+      <span class="section-title__en">
+        information
+      </span>
+    </div>
+    セクションのコンテンツ
+  </div>
+</section>
+<section id="top-blog" class="top-blog">
+  <div class="top-blog__inner inner">
+    <div class="top-blog__section-title section-title">
+      <h2 class="section-title__jp">
+        ブログ
+      </h2>
+      <span class="section-title__en">
+        blog
+      </span>
+    </div>
+    セクションのコンテンツ
+  </div>
+</section>
+<section id="top-contact" class="top-contact">
+  <div class="top-contact__inner inner">
+    <div class="top-contact__section-title section-title">
+      <h2 class="section-title__jp">
+        お問い合わせ
+      </h2>
+      <span class="section-title__en">
+        contact us
+      </span>
+    </div>
+    セクションのコンテンツ
+  </div>
+</section>
+
+<!-- ボタン（基本） -->
+<div class="top-fv__button">
+  <a href="#" class="button">
+    <span>詳しく見る</span>
+  </a>
+</div>
+<!-- ボタン（緑） -->
+<div class="top-fv__button">
+  <a href="#" class="button button--green">
+    <span>詳しく見る</span>
+  </a>
+</div>
+
+<!-- サービスメニュー（オレンジ） -->
+<div class="service-menu">
+  <div class="service-menu__heading">
+    <figure class="service-menu__image">
+      <img src="./assets/images/common/icon-top-fv-01.png" alt="両手でサポートしているアイコン">
+    </figure>
+    <h3 class="service-menu__title">
+      徹底的なサポート
+    </h3>
+  </div>
+  <div class="service-menu__body">
+    <p class="service-menu__text">
+      当社の徹底的なキャリアサポートは、専門家による個別メンタリング、必要なスキルのトレーニング提供、適切な求人の紹介、個々のニーズに基づくキャリアプランの策定、そして定期的な進捗モニタリングを含みます。 
+    </p>
+  </div>
+</div>
+
+<!-- 就職実績カード archievement -->
+<div class="archievement-card">
+  <div class="archievement-card__heading">
+    <figure class="archievement-card__image">
+      <img src="./assets/images/common/works-top-02.jpg" alt="エンジニア大塚雄也さんの写真">
+    </figure>
+    <h4 class="archievement-card__position">
+      エンジニア
+    </ｈ>
+  </div>
+  <div class="archievement-card__body">
+    <h3 class="archievement-card__title">
+      大塚　雄也
+    </h3>
+    <ul>
+      <li class="archievement-card__text">
+        2022年6月就職活動開始
+      </li>
+      <li class="archievement-card__text">
+        2022年10月就職
+      </li>
+      <li class="archievement-card__text">
+        2023年4月正社員雇用
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!-- トップ ブログカード -->
+<div class="top-blog-card">
+  <figure class="top-blog-card__image">
+    <img src="./assets/images/common/blog-top-01.jpg" alt="女性が男性に説明している画像">
+  </figure>
+  <div class="top-blog-card__heading">
+    <time datetime="2023-10-29">2023,10,29</time>
+    <h4 class="top-blog-card__title">
+      キャリア革命、未来を切り拓く成功戦略
+    </h4>
+  </div>
+</div>
+
+<!-- サービスカード what we can do -->
+<div class="service-card">
+  <figure class="service-card__image">
+    <img src="./assets/images/common/service-card-01.jpg" alt="男性と女性がPCで説明している画像">
+  </figure>
+  <div class="service-card__heading">
+    <h4 class="service-card__title">
+      職業適性評価
+    </h4>
+    <p class="service-card__text">
+      スキルや興味を評価し、最適な職種や業界を特定。
+    </p>
+  </div>
+</div>
+
+<!-- お問い合わせカード contact-us -->
+<div class="contact-us-card">
+  <figure class="contact-us-card__image">
+    <img src="./assets/images/common/contact-top-01.jpg" alt="時計が映るPCの画像">
+  </figure>
+  <div class="contact-us-card__body">
+    <h3 class="contact-us-card__title">
+      お問い合わせ
+      <span>contact us</span>
+    </h3>
+    <p class="contact-us-card__text">
+      お問い合わせいただきありがとうございます。<br>
+      ご質問やご要望にお応えするため、お問い合わせフォームより必要事項をご記入のうえ、送信してください。<br>
+      迅速に対応させていただきます。
+    </p>
+    <!-- ボタン（緑） -->
+    <div class="contact-us-card__button">
+      <a href="#" class="button button--green">
+        <span>contact us</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+
+
 
   </main>
-  <footer>
+  <footer id="footer" class="footer">
 
   </footer>
 </body>

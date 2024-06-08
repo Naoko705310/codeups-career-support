@@ -1,0 +1,62 @@
+@use "global" as *;
+
+.archievement-card {
+
+}
+
+.archievement-card__heading {
+  position: relative;
+  z-index: 1;
+
+}
+
+.archievement-card__image {
+  width: 100%;
+  aspect-ratio: 345/230;
+
+}
+
+.archievement-card__position {
+  display: inline-block;
+  width: rem(180);
+  padding: rem(9) 0;
+  border: 1px solid $color-accent;
+  text-align: center;
+  font-family: $base-font-family;
+  font-size: rem(16);
+  color: $black;
+  font-weight: $normal;
+  line-height: 1.5;
+  position: absolute;
+  left: rem(14);
+  bottom: rem(16);
+}
+
+.archievement-card__body {
+  padding: rem(16) rem(14);
+}
+
+.archievement-card__body ul {
+  margin-top: rem(8);
+}
+
+.archievement-card__title {
+  font-family: $base-font-family;
+  font-size: rem(24);
+  color: $black;
+  font-weight: $bold;
+  line-height: 1.5;
+}
+
+.archievement-card__text {
+  font-family: $base-font-family;
+  font-size: rem(14);
+  color: $black;
+  font-weight: $normal;
+  line-height: 1.5;
+}
+
+.archievement-card__text:not(:first-child) {
+  margin-top: rem(4);
+}
+

@@ -1,0 +1,44 @@
+@use "global" as *;
+
+.service-menu {
+  background-color: $color-accent;
+  padding: rem(32) rem(24);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: rem(16);
+  justify-content: center;
+  justify-items: center;
+
+}
+
+.service-menu__heading {
+  width: 100%;
+  text-align: center;
+}
+
+.service-menu__image {
+  width: rem(40);
+  aspect-ratio: 40/40;
+  margin-inline: auto ;
+
+}
+
+.service-menu__title {
+  font-family: $base-font-family;
+  font-size: rem(24);
+  color: $white;
+  font-weight: $bold;
+  line-height: 1.5;
+
+}
+
+.service-menu__text {
+  font-family: $base-font-family;
+  font-size: rem(14);
+  color: $white;
+  font-weight: $normal;
+  line-height: 1.5;
+}
+
+
+

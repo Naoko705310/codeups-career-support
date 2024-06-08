@@ -1,0 +1,26 @@
+@use "global" as *;
+
+.top-archievement__section-title {
+
+}
+
+.section-title {
+
+}
+
+.section-title__jp {
+  font-family: $base-font-family;
+  font-size: rem(24);
+  color: $black;
+  font-weight: $bold;
+  line-height: 1.5;
+}
+
+.section-title__en {
+  font-family: $second-font-family;
+  font-size: rem(14);
+  color: $color-accent;
+  font-weight: $normal;
+  line-height: 1.5;
+}
+
