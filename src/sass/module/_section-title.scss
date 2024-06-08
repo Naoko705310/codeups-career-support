@@ -14,6 +14,9 @@
   color: $black;
   font-weight: $bold;
   line-height: 1.5;
+  @include mq(md) {
+    font-size: rem(32);
+  }
 }
 
 .section-title__en {
@@ -22,5 +25,8 @@
   color: $color-accent;
   font-weight: $normal;
   line-height: 1.5;
+  @include mq(md) {
+    font-size: rem(16);
+  }
 }
 
