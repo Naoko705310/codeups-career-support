@@ -1,0 +1,38 @@
+@use "global" as *;
+
+.sp-nav {
+  margin-top: rem(50);
+}
+
+.sp-nav__items {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: rem(40);
+  text-align: center;
+}
+
+.sp-nav__item {
+
+}
+
+.sp-nav__item a {
+  font-family: $base-font-family;
+  font-size: rem(16);
+  color: $color-accent;
+  font-weight: $normal;
+  line-height: 1.5;
+}
+
+.sp-nav__item a span {
+  font-family: $second-font-family;
+  font-size: rem(14);
+  color: $color-accent;
+  font-weight: $normal;
+  line-height: 1.5;
+  display: block;
+  margin-top: rem(2);
+}
+
+.sp-nav__button {
+  margin-top: rem(40);
+}

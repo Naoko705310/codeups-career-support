@@ -40,9 +40,106 @@
   <script defer src="./assets/js/script.js"></script>
 </head>
 <body>
-  <header id="header" class="header">
+<!-- ヘッダー -->
+<header class="header js-header">
+  <div class="header__inner">
+    <!-- ヘッダーロゴ -->
+    <h1 class="header__logo header-logo">
+      <a href="index.html" class="header-logo__link">
+        <!-- 要修正/ファイル名 -->
+        <img src="./assets/images/common/logo-sp.png" alt="ヘッダーロゴ">
+      </a>
+    </h1>
+    <!-- ハンバーガー -->
+    <button class="header__hamburger hamburger js-hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <!-- SPナビ -->
+    <div class="header__sp-nav js-drawer-menu">
+      <nav class="sp-nav">
+        <ul class="sp-nav__items">
+          <li class="sp-nav__item">
+            <a href="#">私たちについて
+              <span>about us</span>
+            </a>
+          </li>
+          <li class="sp-nav__item">
+            <a href="#">サービス内容
+              <span>service</span>
+            </a>
+          </li>
+          <li class="sp-nav__item">
+            <a href="#">就職実績
+              <span>works</span>
+            </a>
+          </li>
+          <li class="sp-nav__item">
+            <a href="#">企業情報
+              <span>information</span>
+            </a>
+          </li>
+          <li class="sp-nav__item">
+            <a href="#">ブログ
+              <span>blog</span>
+            </a>
+          </li>
+          <li class="sp-nav__item">
+            <a href="#">お問い合わせ
+              <span>contact</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- ボタン（お問い合わせ） -->
+      <div class="sp-nav__button">
+        <a href="#" class="button button--sp-nav">
+          お問い合わせ
+          <span>contact</span>
+        </a>
+      </div>
 
-  </header>
+
+      <!-- PCナビ -->
+      <div class="header__pc-nav pc-nav u-desktop">
+        <ul class="pc-nav__items">
+          <li class="pc-nav__item">
+            <a href="#">私たちについて
+              <span>about us</span>
+            </a>
+          </li>
+          <li class="pc-nav__item">
+            <a href="#">サービス内容
+              <span>service</span>
+            </a>
+          </li>
+          <li class="pc-nav__item">
+            <a href="#">就職実績
+              <span>works</span>
+            </a>
+          </li>
+          <li class="pc-nav__item">
+            <a href="#">企業情報
+              <span>information</span>
+            </a>
+          </li>
+          <li class="pc-nav__item">
+            <a href="#">ブログ
+              <span>blog</span>
+            </a>
+          </li>
+          <li class="pc-nav__item">
+            <a href="#">お問い合わせ
+              <span>contact</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- ヘッダーここまで -->
   <main>
 <section id="top-fv" class="top-fv">
   <div class="top-fv__inner inner">
@@ -266,6 +363,7 @@
 
 
   </main>
+  <!-- フッター -->
   <footer id="top-footer footer" class="footer">
     <div class="footer__inner">
       <!-- フッターロゴ -->
@@ -276,22 +374,57 @@
           </h2>
         </a>
       </div>
-      <!-- 住所 -->
-      <div class="footer__address-wrapper">
-        <p class="footer__address-text">
-          〒540-0002<br>
-          大阪府大阪市中央区大阪城1-1
-        </p>
-        <p class="footer__address-text">
-          TEL:111-111-1234
-        </p>
-        <p class="footer__address-text">
-          TEL:111-111-1235
-        </p>
+      <!-- フッターコンテンツ -->
+      <div class="footer__contents-wrapper">
+        <!-- 住所 -->
+        <div class="footer__address-wrapper">
+          <p class="footer__address-text">
+            〒540-0002<br>
+            大阪府大阪市中央区大阪城1-1
+          </p>
+          <p class="footer__address-text">
+            TEL:111-111-1234
+          </p>
+          <p class="footer__address-text">
+            TEL:111-111-1235
+          </p>
+          <!-- アイコン -->
+          <div class="footer__icon-wrapper">
+            <img src="./assets/images/common/icon-mail.png" alt="メールアイコン">
+            <img src="./assets/images/common/icon-instagram.png" alt="インスタグラムアイコン">
+          </div>
+        </div>
+        <!-- フッターナビ -->
+        <nav class="footer__nav footer-nav">
+          <ul class="footer-nav__items">
+            <li class="footer-nav__item">
+              <a href="#">total</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#">私たちについて</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#">サービス</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#">就職実績</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#">会社概要</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#">ブログ</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#">お問い合わせ</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-
-
-
+      <!-- コピーライト -->
+      <div class="footer__copyright">
+        <p>&copy;2023 code ups.</p>
+      </div>
     </div>
   </footer>
 </body>
