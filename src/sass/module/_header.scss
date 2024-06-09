@@ -1,15 +1,26 @@
 @use "global" as *;
 
 .header {
+  background-color: pink;//あとで消す
+  width: 100%;
+  max-width: 100%;
+  height: rem(60);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  margin-top: rem(10);
   @include mq(md) {
-    width: 100%;
-    max-width: 100%;
-    height: rem(60);
     position: fixed;
     top: 0;
     left: 0;
-    right: 0;
-    z-index: 99;
+    bottom: 0;
+    display: block;
+    width: rem(200); //幅はどこで決めている？要確認
+    height: inherit;
+    background: $white;
+    margin-top: 0;
   }
 }
 
@@ -24,17 +35,25 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: rem(10) rem(15);
+  padding: 0 rem(15);
   @include mq(md) {
-
+    display: block;
+    padding-top: rem(33);
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
   }
+}
+
+.header__logo {
+
 }
 
 .header__hamburger {
   margin: 0 -6px; //デフォルトでbuttonタグについている、左右のpadding:6pxを消す
 }
 
-// sp-nav全体のスタイル
+// sp-nav全体（ドロワーメニュー）のスタイル
 .header__sp-nav {
   background-color: $white;
   width: 100%;
@@ -43,8 +62,8 @@
   top: 0;
   left: 0;
   right: 0;
-  z-index: 88;
+  z-index: 1;
   overflow: scroll; /* 縦スクロールを可能にする */
-  padding: rem(10) rem(15);
-  display: none; //開発中はコメントアウト
+  padding: 0 rem(15);
+  display: none; 
 }
