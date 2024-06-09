@@ -1,0 +1,54 @@
+@use "global" as *;
+
+// ハンバーガーメニュー
+
+.hamburger {
+  max-width: 100%;
+  z-index: 9999;
+  @include mq(md) {
+    display: none;
+  }
+}
+
+.hamburger span {
+  width: rem(38);
+  height: rem(2);
+  position: relative;
+  display: block;
+  background: $color-logo;
+  transition: ease .3s;
+}
+
+.hamburger span:nth-child(1) {
+  top: 0;
+}
+
+.hamburger span:nth-child(2) {
+  margin: rem(10) 0;
+}
+
+.hamburger span:nth-child(3) {
+  top: 0;
+}
+
+// is-OPEN時の動き
+.hamburger.is-open span:nth-child(1),
+.hamburger.is-open span:nth-child(2),
+.hamburger.is-open span:nth-child(3) {
+  background: $color-accent; // 背景色を $color-accent に変更
+}
+
+.hamburger.is-open span:nth-child(1) {
+  top: rem(11);
+  transform: rotate(40deg);
+}
+
+.hamburger.is-open span:nth-child(2) {
+  transform: translateY(-50%);
+  opacity: 0;
+}
+
+.hamburger.is-open span:nth-child(3) {
+  top: rem(-11);
+  transform: rotate(-40deg);
+}

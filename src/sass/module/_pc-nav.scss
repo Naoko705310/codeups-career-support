@@ -1,0 +1,91 @@
+@use "global" as *;
+
+.pc-nav {
+  display: none; //最初(SP)は非表示
+  @include mq(md) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: rem(200); //幅はどこで決めている？要確認
+    height: inherit;
+    background: pink;//あとで消す
+    padding: rem(33) rem(20);
+
+  }
+}
+
+.pc-nav__items {
+  display: flex;
+  flex-direction: column;
+  gap: rem(28);
+  // height: inherit;
+  text-align: center;
+  margin-top: rem(33);//ロゴからの余白
+}
+
+.pc-nav__items li:last-child {
+
+  // padding-right: 0;
+}
+
+.pc-nav__items li {
+  padding: rem(28) 0;
+  // height: inherit;
+  // position: relative;//hover時の下線用
+}
+
+// メニューアイテム
+.pc-nav__items li a { 
+  font-family: $base-font-family;
+  font-size: rem(16);
+  color: #1f1f1f;
+  font-weight: $normal;
+  line-height: 1.5;
+  // text-transform: capitalize;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  // text-align: center;
+  // height: inherit;
+  // white-space: nowrap;
+  // padding: 0 max(1rem, min(1.389vw, 20px));
+}
+
+.pc-nav__item a span {
+  font-family: $second-font-family;
+  font-size: rem(14);
+  color: #1f1f1f;
+  font-weight: $normal;
+  line-height: 1.5;
+  display: block;
+  text-transform: capitalize;
+}
+
+.pc-nav__item a.current,
+.pc-nav__item:hover {
+  // color: $white;
+}
+
+.pc-nav__item a::after {
+  // content: "";
+  // position: absolute;
+  // bottom: rem(20);
+  // left: 10%;
+  // width: 80%;
+  // height: 2px;
+  // background:$white;
+  // transition: all .3s;
+  // transform: scale(0, 1);//X方向0、Y方向1
+  // transform-origin: center top;//上部中央基点
+}
+
+.pc-nav__item a.current a::after,
+.pc-nav__item a:hover::after {
+  // transform: scale(1, 1);//X方向にスケール拡大
+}
+
+.pc-nav__link.uppercase {
+  // text-transform: uppercase;
+}
