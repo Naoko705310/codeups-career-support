@@ -1,0 +1,110 @@
+@use "global" as *;
+
+.top-information {
+  margin-top: rem(80);
+  @include mq(md) {
+    margin-top: rem(120);
+  }
+}
+
+.top-information__inner {
+  max-width: rem(730);
+  @include mq(md) {
+    max-width: rem(1050);
+  }
+}
+
+// オレンジ枠の部分
+.top-information__container {
+  border: 1px solid $color-accent;
+  border-radius: rem(10);
+  padding-top: rem(24);
+  padding-right: rem(14);
+  padding-bottom: rem(40);
+  padding-left: rem(14);
+  @include mq(md) {
+    padding: rem(40);
+  }
+}
+
+.top-information__contents-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: rem(40);
+  position: relative;
+  z-index: 1; 
+  margin-top: rem(24);
+  @include mq(md) {
+    width: 100%;
+    grid-template-columns: 46.195% 46%;//画像とテキストの幅を920で割る
+    justify-content: space-between;
+    margin-top: rem(40);
+  }
+}
+
+.top-information__image {
+  position: relative;
+  padding-top: rem(72);
+  @include mq(md) {
+    padding-top: rem(42);
+  }
+}
+
+.top-information__image img {
+  width: 94.321%; // 299/317
+  max-width: 100%;
+  height: 100%;
+  max-height: rem(300);
+  margin-left: auto;
+  position: relative;
+  z-index: 5;
+  object-fit: cover;
+  border-radius: rem(5);
+  @include mq(md) {
+    width: 83.058%; //353/425
+  }
+}
+
+// オレンジ背景色部分
+.top-information__image:before {
+  content: "";
+  width: 70.977%;//225/317
+  height: 92.024%;//300/326
+  background-color: $color-accent; 
+  z-index: 2; // オレンジ背景を画像の下へ
+  border-radius: rem(5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  @include mq(md) {
+    width: 52.941%; //225/425
+    height:88.235%; //300/340
+  }
+}
+
+.top-information__information:not(:first-child) {
+  margin-top: rem(16);
+}
+
+.top-information__title {
+  font-family: $second-font-family;
+  font-size: rem(16);
+  color: $color-accent;
+  font-weight: $normal;
+  line-height: 1.5;
+}
+
+.top-information__text {
+  font-family: $base-font-family;
+  font-size: rem(16);
+  color: #1f1f1f;
+  font-weight: $normal;
+  line-height: 1.5;
+}
+
+.top-information__button {
+  text-align: center;
+  margin-top: rem(40);
+}
+

@@ -1,13 +1,14 @@
 @use "global" as *;
 
 .archievement-card {
-
+  position: relative;
+  z-index: 1;
 }
 
+// 画像と肩書き
 .archievement-card__heading {
   position: relative;
   z-index: 1;
-
 }
 
 .archievement-card__image {
@@ -34,6 +35,7 @@
 .archievement-card__position {
   display: inline-block;
   width: rem(180);
+  height: calc(rem(16) * 1.5 + rem(18)); // font-size*line-height+上下のpadding
   padding: rem(9) 0;
   border: 1px solid $color-accent;
   text-align: center;
@@ -45,10 +47,21 @@
   position: absolute;
   left: rem(14);
   bottom: rem(16);
+  @include mq(md) {
+    top: rem(40);
+    left: rem(40);
+  }
 }
 
 .archievement-card__body {
   padding: rem(16) rem(14);
+  @include mq(md) {
+    position: absolute;
+    left: rem(40);
+    bottom: rem(40);
+    z-index: 3;
+    padding: 0;
+  }
 }
 
 .archievement-card__body ul {

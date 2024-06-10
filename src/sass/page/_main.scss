@@ -5,7 +5,7 @@ main {
     width: calc(100% - rem(200)); // ヘッダーの幅を差し引いた幅を計算 
     margin-left: rem(200);
     flex: 1;
-    height: 100vh;
+    // height: 100vh;
     box-sizing: border-box;
     overflow-y: auto;
   }

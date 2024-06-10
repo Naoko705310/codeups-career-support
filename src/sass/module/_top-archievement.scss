@@ -1,0 +1,37 @@
+@use "global" as *;
+
+.top-archievement {
+  margin-top: rem(80);
+  @include mq(md) {
+    margin-top: rem(116);
+  }
+}
+
+.top-archievement__inner {
+  max-width: rem(730);
+  @include mq(md) {
+    max-width: rem(1050);
+  }
+}
+
+.top-archievement__items {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: rem(40);
+  margin-top: rem(24);
+  @include mq(md) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: rem(8);
+    margin-top: rem(40);
+  }
+}
+
+.top-archievement__button {
+  margin-top: rem(40);
+  text-align: center;
+  @include mq(md) {
+    margin-top: rem(64);
+  }
+}
+
+
