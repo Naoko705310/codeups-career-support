@@ -1,0 +1,44 @@
+@use "global" as *;
+
+.top-fv {
+  height: rem(667);
+  background-image: url('../images/common/fv-top.jpg'); // 画像のパスはプロジェクトの構造に応じて調整してください
+  background-size: cover;
+  background-position: center;
+}
+
+.top-fv__inner {
+  height: inherit;
+  padding-top: rem(200);
+  @include mq(md) {
+    padding-left: rem(120);
+  }
+}
+
+.top-fv__heading {
+  @include mq(md) {
+    // width: rem(830);
+  }
+
+}
+
+.top-fv__main-copy {
+  font-family: $second-font-family;
+  font-size: rem(24);
+  color: $white;
+  font-weight: $bold;
+  line-height: 1.5;
+  @include mq(md) {
+    font-size: rem(48);
+  }
+}
+
+.top-fv__sub-copy {
+  font-family: $base-font-family;
+  font-size: rem(16);
+  color: $white;
+  font-weight: $bold;
+  line-height: 1.5;
+  margin-top: rem(16);
+}
+

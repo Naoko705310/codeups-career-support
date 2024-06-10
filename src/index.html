@@ -40,181 +40,261 @@
   <script defer src="./assets/js/script.js"></script>
 </head>
 <body>
-<!-- ヘッダー -->
-<header class="header js-header">
-  <div class="header__inner">
-    <!-- ヘッダーロゴ -->
-    <h1 class="header__logo header-logo">
-      <a href="index.html" class="header-logo__link">
-        <img src="./assets/images/common/logo.png" alt="ヘッダーロゴ">
-      </a>
-    </h1>
-    <!-- ハンバーガー -->
-    <button class="header__hamburger hamburger js-hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-    <!-- SPナビ -->
-    <div class="header__sp-nav js-drawer-menu">
-      <nav class="sp-nav">
-        <ul class="sp-nav__items">
-          <li class="sp-nav__item">
+  <!-- ヘッダー -->
+  <header class="header js-header">
+    <div class="header__inner">
+      <!-- ヘッダーロゴ -->
+      <h1 class="header__logo header-logo">
+        <a href="index.html" class="header-logo__link">
+          <img src="./assets/images/common/logo.png" alt="ヘッダーロゴ">
+        </a>
+      </h1>
+      <!-- ハンバーガー -->
+      <button class="header__hamburger hamburger js-hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <!-- SPナビ -->
+      <div class="header__sp-nav js-drawer-menu">
+        <nav class="sp-nav">
+          <ul class="sp-nav__items">
+            <li class="sp-nav__item">
+              <a href="#">私たちについて
+                <span>about us</span>
+              </a>
+            </li>
+            <li class="sp-nav__item">
+              <a href="#">サービス内容
+                <span>service</span>
+              </a>
+            </li>
+            <li class="sp-nav__item">
+              <a href="#">就職実績
+                <span>works</span>
+              </a>
+            </li>
+            <li class="sp-nav__item">
+              <a href="#">企業情報
+                <span>information</span>
+              </a>
+            </li>
+            <li class="sp-nav__item">
+              <a href="#">ブログ
+                <span>blog</span>
+              </a>
+            </li>
+            <li class="sp-nav__item">
+              <a href="#">お問い合わせ
+                <span>contact</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- ボタン（お問い合わせ） -->
+        <div class="sp-nav__button">
+          <a href="#" class="button button--sp-nav">
+            お問い合わせ
+            <span>contact</span>
+          </a>
+        </div>
+      </div>
+      <!-- PCナビ -->
+      <nav class="header__pc-nav pc-nav u-desktop">
+        <ul class="pc-nav__items">
+          <li class="pc-nav__item">
             <a href="#">私たちについて
               <span>about us</span>
             </a>
           </li>
-          <li class="sp-nav__item">
+          <li class="pc-nav__item">
             <a href="#">サービス内容
               <span>service</span>
             </a>
           </li>
-          <li class="sp-nav__item">
+          <li class="pc-nav__item">
             <a href="#">就職実績
               <span>works</span>
             </a>
           </li>
-          <li class="sp-nav__item">
+          <li class="pc-nav__item">
             <a href="#">企業情報
               <span>information</span>
             </a>
           </li>
-          <li class="sp-nav__item">
+          <li class="pc-nav__item">
             <a href="#">ブログ
               <span>blog</span>
             </a>
           </li>
-          <li class="sp-nav__item">
+          <li class="pc-nav__item">
             <a href="#">お問い合わせ
               <span>contact</span>
             </a>
           </li>
         </ul>
       </nav>
-      <!-- ボタン（お問い合わせ） -->
-      <div class="sp-nav__button">
-        <a href="#" class="button button--sp-nav">
-          お問い合わせ
-          <span>contact</span>
-        </a>
-      </div>
     </div>
-    <!-- PCナビ -->
-    <nav class="header__pc-nav pc-nav u-desktop">
-      <!-- ヘッダーロゴPC -->
-      <!-- <h1 class="header__logo header-logo-pc u-desktop">
-        <a href="index.html" class="header-logo-pc__link">
-          <img src="./assets/images/common/logo.png" alt="ヘッダーロゴ">
-        </a>
-      </h1> -->
-      <ul class="pc-nav__items">
-        <li class="pc-nav__item">
-          <a href="#">私たちについて
-            <span>about us</span>
-          </a>
-        </li>
-        <li class="pc-nav__item">
-          <a href="#">サービス内容
-            <span>service</span>
-          </a>
-        </li>
-        <li class="pc-nav__item">
-          <a href="#">就職実績
-            <span>works</span>
-          </a>
-        </li>
-        <li class="pc-nav__item">
-          <a href="#">企業情報
-            <span>information</span>
-          </a>
-        </li>
-        <li class="pc-nav__item">
-          <a href="#">ブログ
-            <span>blog</span>
-          </a>
-        </li>
-        <li class="pc-nav__item">
-          <a href="#">お問い合わせ
-            <span>contact</span>
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</header>
-<!-- ヘッダーここまで -->
+  </header>
+  <!-- ヘッダーここまで -->
   <main>
-<section id="top-fv" class="top-fv">
-  <div class="top-fv__inner inner">
-
-    セクションのコンテンツ
-  </div>
-</section>
-<section id="top-about-us" class="top-about-us">
-  <div class="top-about-us__inner inner">
-    <div class="top-about-us__section-title section-title">
-      <h2 class="section-title__jp">
-        私たちについて
-      </h2>
-      <span class="section-title__en">
-        about-us
-      </span>
-    </div>
-    セクションのコンテンツ
-  </div>
-</section>
-<section id="top-archievement" class="top-archievement">
-  <div class="top-archievement__inner inner">
-    <div class="top-archievement__section-title section-title">
-      <h2 class="section-title__jp">
-        就職実績
-      </h2>
-      <span class="section-title__en">
-        archievement
-      </span>
-    </div>
-    セクションのコンテンツ
-  </div>
-</section>
-<section id="top-information" class="top-information">
-  <div class="top-information__inner inner">
-    <div class="top-information__section-title section-title">
-      <h2 class="section-title__jp">
-        会社概要
-      </h2>
-      <span class="section-title__en">
-        information
-      </span>
-    </div>
-    セクションのコンテンツ
-  </div>
-</section>
-<section id="top-blog" class="top-blog">
-  <div class="top-blog__inner inner">
-    <div class="top-blog__section-title section-title">
-      <h2 class="section-title__jp">
-        ブログ
-      </h2>
-      <span class="section-title__en">
-        blog
-      </span>
-    </div>
-    セクションのコンテンツ
-  </div>
-</section>
-<section id="top-contact" class="top-contact">
-  <div class="top-contact__inner inner">
-    <div class="top-contact__section-title section-title">
-      <h2 class="section-title__jp">
-        お問い合わせ
-      </h2>
-      <span class="section-title__en">
-        contact us
-      </span>
-    </div>
-    セクションのコンテンツ
-  </div>
-</section>
+    <!-- ファーストビュー -->
+    <section id="top-fv" class="top-fv">
+      <div class="top-fv__inner inner">
+        <div class="top-fv__heading">
+          <h2 class="top-fv__main-copy">
+            Navigating Your Success Journey<br>
+            Our Expertise, <br>
+            Your Growth.
+          </h2>
+          <h3 class="top-fv__sub-copy">
+            私たちの専門知識が、あなたの成長を導く道しるべとなります。<br>
+            成功への旅路を、私たちと共に歩みましょう。<br>
+            あなたの未来への第一歩が、<br class="u-mobile">
+            ここから始まります。
+          </h3>
+        </div>
+      </div>
+    </section>
+    <!-- サービス -->
+    <section id="top-service" class="top-service">
+      <div class="top-service__inner inner">
+        <!-- サービスメニュー -->
+        <ul class="top-service__items">
+          <li class="top-service__item">
+            <div class="top-service-card">
+              <figure class="top-service-card__image">
+                <img src="./assets/images/common/icon-top-fv-01.png" alt="両手でサポートしているアイコン">
+              </figure>
+              <h3 class="top-service-card__title">
+                徹底的なサポート
+              </h3>
+              <p class="top-service-card__text">
+                当社の徹底的なキャリアサポートは、専門家による個別メンタリング、必要なスキルのトレーニング提供、適切な求人の紹介、個々のニーズに基づくキャリアプランの策定、そして定期的な進捗モニタリングを含みます。 
+              </p>
+            </div>
+          </li>
+          <li class="top-service__item">
+            <div class="top-service-card">
+              <figure class="top-service-card__image">
+                <img src="./assets/images/common/icon-top-fv-02.png" alt="鉛筆のアイコン">
+              </figure>
+              <h3 class="top-service-card__title">
+                スキル支援
+              </h3>
+              <p class="top-service-card__text">
+                スキル支援では、クライアントの個別スキルを評価し、専門的なトレーニングを提供。
+                業界要件に沿った実践的なスキル強化を重視し、成長に不可欠なスキルを焦点化して支援いたします。
+              </p>
+            </div>
+          </li>
+          <li class="top-service__item">
+            <div class="top-service-card">
+              <figure class="top-service-card__image">
+                <img src="./assets/images/common/icon-top-fv-03.png" alt="PCのアイコン">
+              </figure>
+              <h3 class="top-service-card__title">
+                オリジナルカリキュラム
+              </h3>
+              <p class="top-service-card__text">
+                当社のオリジナルカリキュラムは、参加者のニーズに合わせた独自のトレーニング体系です。
+                専門家による指導のもと、実践的でリアルな業務シナリオに焦点を当て、即戦力となるスキルを磨きます。
+              </p>
+            </div>
+          </li>
+        </ul>
+        <!-- ボタン（基本） -->
+        <div class="top-service__button">
+          <a href="#" class="button">
+            <span>詳しく見る</span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- 私たちについて -->
+    <section id="top-about-us" class="top-about-us">
+      <div class="top-about-us__inner inner">
+        <div class="top-about-us__container">
+          <div class="top-about-us__section-title section-title">
+            <h2 class="section-title__jp section-title__jp--top-about-us">
+              私たちについて
+            </h2>
+            <span class="section-title__en section-title__en--top-about-us">
+              about-us
+            </span>
+          </div>
+          <div class="top-about-us__contents-wrapper">
+            <figure class="top-about-us__image">
+              <img src="./assets/images/common/about-top.jpg" alt="男性が男女に説明している画像">
+            </figure>
+            <p class="top-about-us__text">
+              私たちは革新的なソリューションと専門知識を提供し、クライアントの成功を支えるプロフェッショナルなチームです。<br><br>
+              顧客のニーズを理解し、柔軟かつ効果的なアプローチで解決策を提供します。卓越したスキル強化やキャリアサポートを通じて、個々の成長と組織の発展を促進します。<br><br>
+              常に変化する環境に適応し、持続可能な価値を提供することをミッションに、協力と信頼に基づくパートナーシップを築いています。
+            </p>
+          </div>
+          <!-- ボタン（基本） -->
+          <div class="top-about-us__button">
+            <a href="#" class="button">
+              <span>view more</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 就職実績 archievement -->
+    <section id="top-archievement" class="top-archievement">
+      <div class="top-archievement__inner inner">
+        <div class="top-archievement__section-title section-title">
+          <h2 class="section-title__jp">
+            就職実績
+          </h2>
+          <span class="section-title__en">
+            archievement
+          </span>
+        </div>
+        セクションのコンテンツ
+      </div>
+    </section>
+    <section id="top-information" class="top-information">
+      <div class="top-information__inner inner">
+        <div class="top-information__section-title section-title">
+          <h2 class="section-title__jp">
+            会社概要
+          </h2>
+          <span class="section-title__en">
+            information
+          </span>
+        </div>
+        セクションのコンテンツ
+      </div>
+    </section>
+    <section id="top-blog" class="top-blog">
+      <div class="top-blog__inner inner">
+        <div class="top-blog__section-title section-title">
+          <h2 class="section-title__jp">
+            ブログ
+          </h2>
+          <span class="section-title__en">
+            blog
+          </span>
+        </div>
+        セクションのコンテンツ
+      </div>
+    </section>
+    <section id="top-contact" class="top-contact">
+      <div class="top-contact__inner inner">
+        <div class="top-contact__section-title section-title">
+          <h2 class="section-title__jp">
+            お問い合わせ
+          </h2>
+          <span class="section-title__en">
+            contact us
+          </span>
+        </div>
+        セクションのコンテンツ
+      </div>
+    </section>
 
 <!-- ボタン（基本） -->
 <div class="top-fv__button">
@@ -229,22 +309,7 @@
   </a>
 </div>
 
-<!-- サービスメニュー（オレンジ） -->
-<div class="service-menu">
-  <div class="service-menu__heading">
-    <figure class="service-menu__image">
-      <img src="./assets/images/common/icon-top-fv-01.png" alt="両手でサポートしているアイコン">
-    </figure>
-    <h3 class="service-menu__title">
-      徹底的なサポート
-    </h3>
-  </div>
-  <div class="service-menu__body">
-    <p class="service-menu__text">
-      当社の徹底的なキャリアサポートは、専門家による個別メンタリング、必要なスキルのトレーニング提供、適切な求人の紹介、個々のニーズに基づくキャリアプランの策定、そして定期的な進捗モニタリングを含みます。 
-    </p>
-  </div>
-</div>
+
 
 <!-- 就職実績カード archievement -->
 <div class="archievement-card">
@@ -307,15 +372,15 @@
 </div>
 
 <!-- サービスカード what we can do -->
-<div class="service-card">
-  <figure class="service-card__image">
+<div class="page-service-card">
+  <figure class="page-service-card__image">
     <img src="./assets/images/common/service-card-01.jpg" alt="男性と女性がPCで説明している画像">
   </figure>
-  <div class="service-card__heading">
-    <h4 class="service-card__title">
+  <div class="page-service-card__heading">
+    <h4 class="page-service-card__title">
       職業適性評価
     </h4>
-    <p class="service-card__text">
+    <p class="page-service-card__text">
       スキルや興味を評価し、最適な職種や業界を特定。
     </p>
   </div>

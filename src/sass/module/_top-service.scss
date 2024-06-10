@@ -1,0 +1,33 @@
+@use "global" as *;
+
+.top-service {
+  margin-top: rem(-147);
+  @include mq(md) {
+    margin-top: rem(-101);
+  }
+}
+
+.top-service__inner {
+
+}
+
+.top-service__items {
+  max-width: rem(318);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: rem(16);
+  margin-inline: auto;
+  @include mq(md) {
+    max-width: rem(1000);
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.top-service__item {
+
+}
+
+.top-service__button {
+  margin-top: rem(40);
+  text-align: center;
+}

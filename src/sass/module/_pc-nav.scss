@@ -5,16 +5,6 @@
   @include mq(md) {
     width: 100%;
     margin-top: rem(28);
-
-    // position: fixed;
-    // top: 0;
-    // left: 0;
-    // bottom: 0;
-    // display: block;
-    // width: rem(200); //幅はどこで決めている？要確認
-    // height: inherit;
-    // background: $white;
-    // padding-top: rem(33);
   }
 }
 

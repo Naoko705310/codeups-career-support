@@ -21,6 +21,10 @@
   position: relative;
 }
 
+.button span::first-letter {
+  text-transform: uppercase;
+}
+
 // 擬似要素で矢印配置
 .button span:after {
   content: "";

@@ -1,7 +1,6 @@
 @use "global" as *;
 
 .header {
-  background-color: pink;//あとで消す
   width: 100%;
   max-width: 100%;
   height: rem(60);
@@ -16,11 +15,13 @@
     top: 0;
     left: 0;
     bottom: 0;
+    z-index: 100;
     display: block;
-    width: rem(200); //幅はどこで決めている？要確認
+    width: rem(200); 
     height: inherit;
     background: $white;
     margin-top: 0;
+    overflow: hidden;
   }
 }
 

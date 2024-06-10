@@ -30,3 +30,20 @@
   }
 }
 
+// 要確認
+.section-title__en span::first-letter {
+  text-transform: uppercase;
+}
+
+// トップページ 私たちについてのタイトル（白）
+.section-title__jp--top-about-us {
+  color: $white;
+  position: relative; 
+  z-index: 10; 
+}
+
+.section-title__en--top-about-us {
+  color: $white;
+  position: relative; 
+  z-index: 10; 
+}

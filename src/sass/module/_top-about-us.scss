@@ -1,0 +1,137 @@
+@use "global" as *;
+
+.top-about-us {
+  margin-top: rem(80);
+  @include mq(md) {
+    margin-top: rem(116);
+  }
+}
+
+.inner.top-about-us__inner {
+  max-width: rem(730);
+  @include mq(md) {
+    max-width: rem(1050);
+  }
+}
+
+.top-about-us__container {
+  border: 1px solid $color-accent;
+  border-radius: rem(10);
+  padding-top: rem(24);
+  padding-right: rem(14);
+  padding-bottom: rem(40);
+  padding-left: rem(14);
+  position: relative;
+  z-index: 1;
+  @include mq(md) {
+    padding: rem(40);
+  }
+}
+
+  // 背景画像の設定
+  .top-about-us__container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 27.027%; 
+    background-image: url('../images/common/about-top.jpg');
+    background-position: 10% 10%; 
+    background-size: 200%; //拡大
+    background-repeat: no-repeat;
+    z-index: -1; 
+    border-radius: rem(10) rem(10) 0 0;
+    @include mq(md) {
+      width: calc(calc(336/1000)*100%);
+      height: 100%;
+      background-position: 20% 20%; 
+      background-size: 350%; //拡大
+    }
+  }
+
+  // オーバーレイの設定
+  .top-about-us__container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 27.027%; // 高さを27%に設定
+    background-color: rgba($color-accent, 0.7); 
+    z-index: 0; // オーバーレイを背景画像の上に配置
+    @include mq(md) {
+      width: calc(calc(336/1000)*100%);
+      height: 100%;
+      background-position: 20% 10%; 
+      // background-size: 300%; //拡大
+    }
+  }
+
+.top-about-us__contents-wrapper {
+  position: relative;
+  z-index: 1; 
+  margin-top: rem(40);
+  @include mq(md) {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 46%;//画像とテキストの幅を920で割る
+    justify-content: space-between;
+  }
+}
+
+.top-about-us__section-title {
+
+}
+
+.top-about-us__image {
+  position: relative;
+  border-radius: rem(5);
+  @include mq(md) {
+    // width: rem(460);
+    // width: calc(calc(460/1000)*100%);
+  }
+}
+
+.top-about-us__image::before {
+  content: "";
+  display: block;
+  padding-top: calc(161 / 317 * 100%);
+  @include mq(md) {
+    padding-top: calc(235 / 460 * 100%);
+  }
+}
+
+.top-about-us__image img {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+.top-about-us__text {
+  font-family: $base-font-family;
+  font-size: rem(14);
+  color: #1f1f1f;
+  font-weight: $normal;
+  line-height: 1.5;
+  margin-top: rem(40);
+  @include mq(md) {
+    // width: rem(420);
+    // width: calc(calc(420/1000)*100%);
+    margin-top: 0;
+  }
+}
+
+.top-about-us__button {
+  margin-top: rem(40);
+  text-align: center;
+  @include mq(md) {
+    margin-top: rem(64);
+  }
+}
