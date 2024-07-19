@@ -21,6 +21,14 @@ body {
   font-family: $base-font-family;
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
 // フォントウェイト
 $regular: 300;
 $normal: 400;

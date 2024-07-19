@@ -12,13 +12,14 @@
 }
 
 .interview-card__image {
+  width: 100%;
   position: relative;
 }
 
-.interview-card__image::before {
+.interview-card__image:before {
   content: "";
   display: block;
-  padding-top: calc(193 / 317 * 100%);
+  padding-top: 66.551%;//193/290
 }
 
 .interview-card__image img {

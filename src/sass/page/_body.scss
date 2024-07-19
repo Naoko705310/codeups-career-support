@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.body__container {
+  // @include mq(md) {
+  //   display: grid;
+  //   grid-template-columns:rem(200) 1fr;
+  // }
+}

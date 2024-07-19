@@ -15,7 +15,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://naoko-test/site/codeups-carrer-support/">
   <!-- 要確認 本番環境に変更 -->
-  <meta property="og:image" content="https://naoko-test/site/codeups-carrer-support/assets/images/common/career-support-ogp.jpg">
+  <meta property="og:image" content="https://naoko-test.site/codeups-carrer-support/assets/images/common/career-support-ogp.jpg">
   <meta property="og:site_name" content="CodeUpsキャリアサポートサイト">
   <meta property="og:description" content="CodeUpsキャリアサポートサイトです。">
   <!-- ここからTwitterカードの記述 -->
@@ -24,7 +24,7 @@
   <!-- ここからFacebookカードの記述 -->
   <meta property="fb:app_id" content="FacebookアプリID">
   <!-- ファビコン -->
-  <link rel="icon" href="./assets/images/common//icon.png">
+  <link rel="icon" href="./assets/images/common/icon.png">
   <!-- Google フォント -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,15 +40,317 @@
   <script defer src="./assets/js/script.js"></script>
 </head>
 <body>
-  <header>
+  <div class="body__container">
+    <!-- ヘッダー -->
+    <header class="header js-header">
+      <div class="header__inner">
+        <!-- ヘッダーロゴ -->
+        <h1 class="header__logo header-logo">
+          <a href="index.html" class="header-logo__link">
+            <img src="./assets/images/common/logo.png" alt="ヘッダーロゴ">
+          </a>
+        </h1>
+        <!-- ハンバーガー -->
+        <button class="header__hamburger hamburger js-hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <!-- SPナビ -->
+        <div class="header__sp-nav js-drawer-menu">
+          <nav class="sp-nav">
+            <ul class="sp-nav__items">
+              <li class="sp-nav__item">
+                <a href="about-us.html">私たちについて
+                  <span>about us</span>
+                </a>
+              </li>
+              <li class="sp-nav__item">
+                <a href="service.html">サービス内容
+                  <span>service</span>
+                </a>
+              </li>
+              <li class="sp-nav__item">
+                <a href="works.html">就職実績
+                  <span>works</span>
+                </a>
+              </li>
+              <li class="sp-nav__item">
+                <a href="company.html">企業情報
+                  <span>information</span>
+                </a>
+              </li>
+              <li class="sp-nav__item">
+                <a href="blog.html">ブログ
+                  <span>blog</span>
+                </a>
+              </li>
+              <li class="sp-nav__item">
+                <a href="contact.html">お問い合わせ
+                  <span>contact</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <!-- ボタン（お問い合わせ） -->
+          <div class="sp-nav__button">
+            <a href="contact.html" class="button button--sp-nav">
+              お問い合わせ
+              <span>contact</span>
+            </a>
+          </div>
+        </div>
+        <!-- PCナビ -->
+        <nav class="header__pc-nav pc-nav u-desktop">
+          <ul class="pc-nav__items">
+            <li class="pc-nav__item">
+              <a href="about-us.html">私たちについて
+                <span>about us</span>
+              </a>
+            </li>
+            <li class="pc-nav__item">
+              <a href="service.html">サービス内容
+                <span>service</span>
+              </a>
+            </li>
+            <li class="pc-nav__item">
+              <a href="works.html">就職実績
+                <span>works</span>
+              </a>
+            </li>
+            <li class="pc-nav__item">
+              <a href="company.html">企業情報
+                <span>information</span>
+              </a>
+            </li>
+            <li class="pc-nav__item">
+              <a href="blog.html">ブログ
+                <span>blog</span>
+              </a>
+            </li>
+            <li class="pc-nav__item">
+              <a href="contact.html">お問い合わせ
+                <span>contact</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- ヘッダーここまで -->
+    <div class="main__container">
+      <main>
+        <!-- ファーストビュー -->
+        <section id="top-fv" class="top-fv">
+          <div class="top-fv__inner inner">
+            <div class="top-fv__heading">
+              <h2 class="top-fv__main-copy page-fv__main-copy">
+                未来を共に築く、<br>
+                革新と協力の一翼。
+              </h2>
+            </div>
+          </div>
+        </section>
+        <!-- 下層ページコンテンツ -->
+        <section class="page-about-us__policy">
+          <div class="about-us-policy__inner inner">
+            <!-- 理念 -->
+            <div class="about-us-policy__container">
+              <h2 class="about-us-policy__section-title">
+                理念
+                <span>policy</span>
+              </h2>
+              <div class="about-us-policy__contents-wrapper">
+                <figure class="about-us-policy__image">
+                  <img src="" alt="">
+                </figure>
+                <div class="about-us-policy__body">
+                  <h3 class="about-us-policy__title">
+                    革新と協力
+                  </h3>
+                  <div class="about-us-policy__text">
+                    <p>私たちは革新と協力を重視し、未来を共に築くことに誇りを持っています。持続可能な価値を提供し、変化に柔軟に対応する中で、クライアントとの協力により共に成長し、業界に新たなる道を切り拓きます。<br><br>
+                      私たちの理念は、常に進化する環境で先進的なソリューションを提供し、真のパートナーシップを通じて成功と未来を形作ることです。</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- キャリアサポートとは -->
+        <div class="about-us-carrier-support__container">
+          <div class="about-us-carrier-support__contents-wrapper">
+            <figure class="about-us-carrier-support__image">
+              <img src="" alt="">
+            </figure>
+            <div class="about-us-carrier-support__body">
+              <h3 class="about-us-carrier-support__title">
+                キャリアサポートとは
+                <span>Carrier support</span>
+              </h3>
+              <div class="about-us-carrier-support__text">
+                <p>キャリアサポートは、個人が職業的な目標を達成するために提供される支援の総称です。<br><br>
+                  スキル開発、求人紹介、キャリアアドバイスなど、個々のニーズに合わせたトータルなサービスを通じて、クライアントが自己成長し、適切な職場での成功を実現するための支援体制を指します。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  </header>
-  <main>
 
-  </main>
-  <footer>
 
-  </footer>
+
+
+
+            <div class="top-about-us__container page-about-us__container">
+              <div class="top-about-us__section-title section-title">
+                <h2 class="section-title__jp section-title__jp--top-about-us">
+                  私たちについて
+                </h2>
+                <span class="section-title__en section-title__en--top-about-us">
+                  about-us
+                </span>
+              </div>
+              <div class="top-about-us__contents-wrapper">
+                <figure class="top-about-us__image">
+                  <img src="./assets/images/common/about-top.jpg" alt="男性が男女に説明している画像">
+                </figure>
+                <p class="top-about-us__text">
+                  私たちは革新的なソリューションと専門知識を提供し、クライアントの成功を支えるプロフェッショナルなチームです。<br><br>
+                  顧客のニーズを理解し、柔軟かつ効果的なアプローチで解決策を提供します。卓越したスキル強化やキャリアサポートを通じて、個々の成長と組織の発展を促進します。<br><br>
+                  常に変化する環境に適応し、持続可能な価値を提供することをミッションに、協力と信頼に基づくパートナーシップを築いています。
+                </p>
+              </div>
+              <!-- ボタン（基本） -->
+              <div class="top-about-us__button">
+                <a href="about-us.html" class="button">
+                  <span>view more</span>
+                </a>
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- お問い合わせ page-contact -->
+        <section id="page-contact" class="page-contact">
+          <div class="page-contact__inner inner">
+            <div class="page-contact__section-title section-title">
+              <h2 class="section-title__jp">
+                お問い合わせ
+              </h2>
+              <span class="section-title__en">
+                contact us
+              </span>
+            </div>
+            <!-- お問い合わせカード contact-us -->
+            <div class="contact-us-card">
+              <figure class="contact-us-card__image">
+                <img src="./assets/images/common/contact-top-01.jpg" alt="時計が映るPCの画像">
+              </figure>
+              <div class="contact-us-card__body">
+                <h3 class="contact-us-card__title">
+                  お問い合わせ
+                  <span>contact us</span>
+                </h3>
+                <p class="contact-us-card__text">
+                  お問い合わせいただきありがとうございます。<br>
+                  ご質問やご要望にお応えするため、お問い合わせフォームより必要事項をご記入のうえ、送信してください。<br>
+                  迅速に対応させていただきます。
+                </p>
+                <!-- ボタン（緑） -->
+                <div class="contact-us-card__button">
+                  <a href="contact.html" class="button button--green">
+                    <span>contact us</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!-- フッター -->
+      <footer id="footer" class="top-footer footer">
+        <div class="footer__inner">
+          <!-- フッターロゴ -->
+          <div class="footer__logo footer-logo">
+            <a href="index.html" class="footer-logo__link">
+              <h2 class="footer-logo__image">
+                <img src="./assets/images/common/logo.png" alt="フッターロゴ">
+              </h2>
+            </a>
+          </div>
+          <!-- フッターコンテンツ -->
+          <div class="footer__contents-wrapper">
+            <!-- 住所 -->
+            <div class="footer__address-wrapper">
+              <p class="footer__address-text">
+                〒540-0002<br>
+                大阪府大阪市中央区大阪城1-1
+              </p>
+              <p class="footer__address-text">
+                TEL:111-111-1234
+              </p>
+              <p class="footer__address-text">
+                TEL:111-111-1235
+              </p>
+              <!-- アイコン -->
+              <div class="footer__icon-wrapper">
+                <img src="./assets/images/common/icon-mail.png" alt="メールアイコン">
+                <img src="./assets/images/common/icon-instagram.png" alt="インスタグラムアイコン">
+              </div>
+            </div>
+            <!-- フッターナビ -->
+            <nav class="footer__nav footer-nav">
+              <ul class="footer-nav__items">
+                <li class="footer-nav__item">
+                  <a href="index.html" class="uppercase">total</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="about-us.html">私たちについて</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="service.html">サービス</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="works.html">就職実績</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="company.html">会社概要</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="blog.html">ブログ</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="contact.html">お問い合わせ</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- コピーライト -->
+          <div class="footer__copyright">
+            <p>&copy;2023 code ups.</p>
+          </div>
+        </div>
+      </footer>
+    </div><!-- main__container -->
+  </div><!-- body__container -->
 </body>
-
 </html>

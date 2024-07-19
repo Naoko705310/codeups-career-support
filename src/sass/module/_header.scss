@@ -11,13 +11,13 @@
   z-index: 99;
   margin-top: rem(10);
   @include mq(md) {
+    width: rem(200);
     position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
     z-index: 100;
     display: block;
-    width: rem(200); 
     height: inherit;
     background: $white;
     margin-top: 0;
