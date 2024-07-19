@@ -1,0 +1,24 @@
+@use "global" as *;
+
+.page-about-us__policy {
+  position: relative;
+  z-index: -3;
+  margin-top: rem(-366);
+  @include mq(md) {
+    margin-top: rem(-278);
+  }
+}
+
+.page-about-us__carrier-support {
+  margin-top: rem(80);
+  @include mq(md) {
+    margin-top: rem(122);
+  }
+}
+
+.page-about-us__contact {
+  margin-top: rem(80);
+  @include mq(md) {
+    margin-top: rem(120);
+  }
+}
