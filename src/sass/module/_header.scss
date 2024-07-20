@@ -3,13 +3,13 @@
 .header {
   width: 100%;
   max-width: 100%;
-  height: rem(60);
+  height: rem(60+10);
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 99;
-  margin-top: rem(10);
+  padding-top: rem(10);
   @include mq(md) {
     width: rem(200);
     position: fixed;

@@ -27,7 +27,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
       $(".js-hamburger").addClass("is-open");
       $("body").css("overflow", "hidden");
       $(".js-header").css("background-color", "#408F95");
-      $(".header-logo img").attr("src", "./assets/images/common/logo-sp.png"); // ロゴ画像を変更
+    //   $(".header-logo img").attr("src", "./assets/images/common/logo-sp.png"); // ロゴ画像を変更
   }
 
   // ドロワーメニューを閉じる関数
@@ -37,7 +37,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
       $(".js-hamburger").removeClass("is-open");
       $("body").css("overflow", "auto");
       $(".js-header").css("background-color", "");
-      $(".header-logo img").attr("src", "./assets/images/common/logo.png"); // ロゴ画像を元に戻す
+    //   $(".header-logo img").attr("src", "./assets/images/common/logo.png"); // ロゴ画像を元に戻す
   }
 
   // 画面幅が768pxを超えたらメニューを閉じる
