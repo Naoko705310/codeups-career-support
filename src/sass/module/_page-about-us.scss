@@ -1,5 +1,11 @@
 @use "global" as *;
 
+.page-about-us__inner.inner {
+  @include mq(md) {
+    max-width: rem(1000+50);
+  }
+}
+
 .page-about-us__policy {
   position: relative;
   z-index: -3;

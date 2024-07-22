@@ -1,0 +1,19 @@
+@use "global" as *;
+
+// 数字で見るCodeUps カード群
+
+.works-numbers-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: rem(40);
+  @include mq(md) { 
+    grid-template-columns: repeat(2, 1fr);
+    gap: rem(48) 0;
+  }
+}
+
+.works-numbers-cards__item:nth-child(odd) {
+  @include mq(md) {
+    border-right: 1px solid $color-accent;
+  }
+}

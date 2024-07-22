@@ -1,0 +1,22 @@
+@use "global" as *;
+
+// 数字でみるCodeUps
+
+
+.works-numbers__container {
+  padding: rem(40) 0;
+  border: 1px solid $color-accent;
+  border-radius: rem(10);
+  background-color: #fff;
+  margin-top: rem(24);
+  @include mq(md) {
+    width: calc(760 / 880 * 100%);
+    margin-top: rem(40);
+    margin-left: auto;
+  }
+}
+
+
+
+
+

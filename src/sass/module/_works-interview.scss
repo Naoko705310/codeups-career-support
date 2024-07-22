@@ -1,0 +1,12 @@
+@use "global" as *;
+
+// 就職者インタビュー
+
+.works-interview__items {
+  margin-top: rem(24);
+  @include mq(md) {
+    width: calc(760 / 880 * 100%);
+    margin-top: rem(40);
+    margin-left: auto;
+  }
+}

@@ -1,0 +1,9 @@
+@use "global" as *;
+
+// 就職者インタビュー カード群
+
+.interview-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: rem(40);
+}

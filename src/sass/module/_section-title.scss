@@ -47,3 +47,17 @@
   position: relative; 
   z-index: 10; 
 }
+
+// 下層ページ 私たちについてのタイトル（白）
+.section-title__jp--page-about-us-white {
+  color: $white;
+  position: relative;
+  z-index: 10;
+}
+
+.section-title__en--page-about-us-white {
+  color: $white;
+  position: relative;
+  z-index: 10;
+  text-transform: capitalize;
+}

@@ -1,11 +1,17 @@
 @use "global" as *;
 
+// 就職実績 Works 就職者インタビューカード
+
 .interview-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: rem(16);
   padding: rem(24) rem(14);
   border: 1px solid $color-accent;
   border-radius: rem(10);
+  background-color: $white;
   @include mq(md) {
-    display: flex;
+    grid-template-columns: 42.647% 1fr;
     gap: rem(24);
     padding: rem(46) rem(40);
   }
@@ -14,12 +20,17 @@
 .interview-card__image {
   width: 100%;
   position: relative;
+  border-radius: rem(5);
 }
 
 .interview-card__image:before {
   content: "";
   display: block;
-  padding-top: 66.551%;//193/290
+  padding-top: 60.883%;//193/317
+  @include mq(md) {
+    padding-top: 66.551%;//193/290
+  }
+
 }
 
 .interview-card__image img {
@@ -31,10 +42,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   object-fit: cover;
-}
-
-.interview-card__body {
-
+  border-radius: rem(5);
 }
 
 .interview-card__title {
@@ -43,7 +51,6 @@
   color: $black;
   font-weight: $bold;
   line-height: 1.5;
-  margin-top: rem(16);
   @include mq(md) {
     font-size: rem(24);
   }
@@ -56,9 +63,6 @@
   font-weight: $normal;
   line-height: 1.5;
   margin-top: rem(16);
-  @include mq(md) {
-
-  }
 }
 
 .interview-card__text {

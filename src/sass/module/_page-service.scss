@@ -1,0 +1,21 @@
+@use "global" as *;
+
+.page-service {
+  margin-top: rem(-366);
+  @include mq(md) {
+    margin-top: rem(-276);
+  }
+}
+
+.page-service__inner.inner {
+  @include mq(md) {
+    max-width: rem(1000+50);
+  }
+}
+
+.page-service__service-contents {
+  margin-top: rem(80);
+  @include mq(md) {
+    margin-top: rem(120);
+  }
+}

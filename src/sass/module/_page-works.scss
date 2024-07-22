@@ -1,0 +1,23 @@
+@use "global" as *;
+
+// 下層ページ 就職実績 Works
+
+.page-works {
+  margin-top: rem(-366);
+  @include mq(md) {
+    margin-top: rem(-278);
+  }
+}
+
+.page-works__inner.inner {
+  @include mq(md) {
+    max-width: rem(880+50);
+  }
+}
+
+.page-works__numbers {
+  margin-top: rem(80);
+  @include mq(md) {
+    margin-top: rem(120);
+  }
+}

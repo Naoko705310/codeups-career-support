@@ -1,23 +1,6 @@
 @use "global" as *;
 
 
-
-.about-us-carrier-support {
-
-}
-
-.about-us-carrier-support__inner.inner {
-  @include mq(md) {
-    max-width: rem(1000+50);
-}
-}
-
-.inner {
-
-}
-
-
-
 .about-us-carrier-support__container {
 
 }
@@ -30,11 +13,6 @@
     align-items: center;
   }
 }
-
-.about-us-carrier-support__image {
-
-}
-
 
 .about-us-carrier-support__image {
   position: relative;
@@ -68,28 +46,28 @@
   }
 }
 
-.about-us-carrier-support__title {
-  font-family: $base-font-family;
-  font-size: rem(24);
-  color: $black;
-  font-weight: $bold;
-  line-height: 1.5;
-  @include mq(md) {
-    font-size: rem(32);
-  }
-}
+// .about-us-carrier-support__title {
+//   font-family: $base-font-family;
+//   font-size: rem(24);
+//   color: $black;
+//   font-weight: $bold;
+//   line-height: 1.5;
+//   @include mq(md) {
+//     font-size: rem(32);
+//   }
+// }
 
-.about-us-carrier-support__title span {
-  font-family: $base-font-family;
-  font-size: rem(14);
-  color: $color-accent;
-  font-weight: $normal;
-  line-height: 1.5;
-  display: block;
-  @include mq(md) {
-    font-size: rem(16);
-  }
-}
+// .about-us-carrier-support__title span {
+//   font-family: $base-font-family;
+//   font-size: rem(14);
+//   color: $color-accent;
+//   font-weight: $normal;
+//   line-height: 1.5;
+//   display: block;
+//   @include mq(md) {
+//     font-size: rem(16);
+//   }
+// }
 
 .about-us-carrier-support__text {
   font-family: $base-font-family;
