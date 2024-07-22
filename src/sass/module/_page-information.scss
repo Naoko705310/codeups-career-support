@@ -1,0 +1,61 @@
+@use "global" as *;
+
+.page-information {
+  margin-top: rem(-366);
+  @include mq(md) {
+    margin-top: rem(-278);
+  }
+}
+
+.page-information__inner.inner {
+max-width: rem(1000+50);
+}
+
+.page-information__container {
+  background-color: $white;
+  border: 1px solid $color-accent;
+  border-radius: rem(10);
+  padding: rem(24) rem(14);
+  @include mq(md) {
+    padding: rem(40);
+  }
+}
+
+.page-information__image {
+  position: relative;
+  margin-top: rem(15);
+  @include mq(md) {
+    margin-top: rem(40);
+  }
+}
+
+.page-information__image::before {
+  content: "";
+  display: block;
+  padding-top: calc(160 / 317 * 100%);
+  @include mq(md) {
+    padding-top: calc(360 / 920 * 100%);
+  }
+}
+
+.page-information__image img {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+.page-information__company-information {
+  max-width: rem(730);
+  margin-top: rem(24);
+  margin-inline: auto;
+  @include mq(md) {
+    margin-top: rem(80);
+  }
+}
+
+
