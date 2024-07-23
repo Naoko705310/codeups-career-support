@@ -1,0 +1,73 @@
+@use "global" as *;
+
+// wp-PageNaviで実装したので、静的コーディングで書いたcssではなく、wp-PageNaviで生成されたHTMLに、cssをあてる。
+
+// ページネーションのコンテナ
+.wp-pagenavi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: rem(12);
+}
+
+// 現在のページ番号、hover要素のスタイル
+.wp-pagenavi .page.current,
+.wp-pagenavi .previouspostslink:hover,
+.wp-pagenavi .page:hover,
+.wp-pagenavi .current:hover,
+.wp-pagenavi .nextpostslink:hover {
+  color: $white;
+}
+
+// 前への矢印、ページ番号、次への矢印のスタイル
+.wp-pagenavi .previouspostslink, //前の矢印
+.wp-pagenavi .page, // ページ番号
+.wp-pagenavi .nextpostslink { // 次への矢印
+  font-family: $base-font-family;
+  font-size: rem(16);
+  color: $black;
+  font-weight: $normal;
+  line-height: 1;
+  width: rem(40);
+  height: rem(40);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .3s;
+  position: relative;
+  z-index: 2;
+}
+
+// 前へと次への矢印
+.wp-pagenavi .previouspostslink, //前の矢印
+.wp-pagenavi .nextpostslink { // 次への矢印
+  width: rem(10);
+  color: $color-accent;
+}
+
+// 擬似要素適用のため
+.wp-pagenavi .page.larger {
+  position: relative;
+}
+
+// 擬似要素で背景にオレンジの菱形
+.wp-pagenavi .page.current::before,
+.wp-pagenavi .page:hover::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: rem(40); // 40px四方の四角い背景
+  height: rem(40); // 40px四方の四角い背景
+  background-color: $color-accent;
+  transform: translate(-50%, -50%) rotate(45deg); // 中央に配置し、45度回転
+  z-index: -1; // 背景をテキストの後ろに配置
+}
+
+// 矢印と数字の余白調整
+.wp-pagenavi .previouspostslink {
+  margin-right: rem(28);
+}
+.wp-pagenavi .nextpostslink {
+  margin-left: rem(28);
+}
