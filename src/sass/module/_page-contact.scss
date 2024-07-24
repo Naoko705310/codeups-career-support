@@ -1,0 +1,16 @@
+@use "global" as *;
+
+.page-contact {
+  margin-top: rem(-366);
+  @include mq(md) {
+    margin-top: rem(-276);
+  }
+}
+
+.page-contact__inner.inner {
+  max-width: rem(1000+50);
+}
+
+.page-contact__contact-form {
+
+}

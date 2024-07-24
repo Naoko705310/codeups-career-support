@@ -65,7 +65,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   /* -------------------------------------------- */
 //   function validateForm() {
 //     let hasError = false;
-//     $('.input-area, .checkbox-input').removeClass('errored');
+//     $('.contact-form__input-area, .checkbox-input').removeClass('errored');
 //     $('.js-error-required, .js-checkbox-error, .js-radio-error, .js-privacy-error').text('');
 //     $('#js-error-message').hide(); // エラーメッセージを非表示にする
 
