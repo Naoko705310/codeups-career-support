@@ -1,0 +1,9 @@
+@use "global" as *;
+
+.back-to-top {
+  font-family: $base-font-family;
+  font-size: rem(16);
+  color: $black;
+  font-weight: $normal;
+  line-height: 1.5;
+}

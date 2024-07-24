@@ -40,15 +40,258 @@
   <script defer src="./assets/js/script.js"></script>
 </head>
 <body>
-  <header>
+  <div class="body__container">
+    <!-- ヘッダー -->
+    <header class="header js-header">
+      <div class="header__inner">
+        <!-- ヘッダーロゴ -->
+        <h1 class="header__logo header-logo">
+          <a href="index.html" class="header-logo__link">
+            <img src="./assets/images/common/logo.png" alt="ヘッダーロゴ">
+          </a>
+        </h1>
+        <!-- ハンバーガー -->
+        <button class="header__hamburger hamburger js-hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <!-- SPナビ -->
+        <div class="header__sp-nav js-drawer-menu">
+          <nav class="sp-nav">
+            <ul class="sp-nav__items">
+              <li class="sp-nav__item">
+                <a href="about-us.html">私たちについて
+                  <span>about us</span>
+                </a>
+              </li>
+              <li class="sp-nav__item">
+                <a href="service.html">サービス内容
+                  <span>service</span>
+                </a>
+              </li>
+              <li class="sp-nav__item">
+                <a href="works.html">就職実績
+                  <span>works</span>
+                </a>
+              </li>
+              <li class="sp-nav__item">
+                <a href="information.html">企業情報
+                  <span>information</span>
+                </a>
+              </li>
+              <li class="sp-nav__item">
+                <a href="blog.html">ブログ
+                  <span>blog</span>
+                </a>
+              </li>
+              <li class="sp-nav__item">
+                <a href="contact/index.html">お問い合わせ
+                  <span>contact</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <!-- ボタン（お問い合わせ） -->
+          <div class="sp-nav__button">
+            <a href="contact/index.html" class="button button--sp-nav">
+              お問い合わせ
+              <span>contact</span>
+            </a>
+          </div>
+        </div>
+        <!-- PCナビ -->
+        <nav class="header__pc-nav pc-nav u-desktop">
+          <ul class="pc-nav__items">
+            <li class="pc-nav__item">
+              <a href="about-us.html">私たちについて
+                <span>about us</span>
+              </a>
+            </li>
+            <li class="pc-nav__item">
+              <a href="service.html">サービス内容
+                <span>service</span>
+              </a>
+            </li>
+            <li class="pc-nav__item">
+              <a href="works.html">就職実績
+                <span>works</span>
+              </a>
+            </li>
+            <li class="pc-nav__item">
+              <a href="information.html">企業情報
+                <span>information</span>
+              </a>
+            </li>
+            <li class="pc-nav__item">
+              <a href="blog.html">ブログ
+                <span>blog</span>
+              </a>
+            </li>
+            <li class="pc-nav__item">
+              <a href="contact/index.html">お問い合わせ
+                <span>contact</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- ヘッダーここまで -->
+    <div class="main__container">
+      <main>
+        <!-- ファーストビュー -->
+        <section id="top-fv" class="top-fv">
+          <div class="top-fv__inner inner">
+            <div class="top-fv__heading">
+              <h2 class="top-fv__main-copy page-fv__main-copy">
+                社員ブログ
+              </h2>
+            </div>
+          </div>
+        </section>
+        <!-- 下層ページコンテンツ -->
+        <section class="page-blog-details">
+          <div class="page-blog-details__inner inner">
+            <div class="page-blog-details__container">
+              <!-- ブログカード -->
+              <a href="blog-details.html" class="blog-details__blog-card blog-card">
+                <figure class="blog-card__image">
+                  <img src="./assets/images/common/blog-card-01.jpg" alt="PCを打っているオレンジセーターの人物">
+                </figure>
+                <div class="blog-card__heading">
+                  <p class="blog-card__tag">new</p>
+                  <h4 class="blog-card__title">
+                    キャリアの舞台裏
+                  </h4>
+                  <time datetime="2024-01-15">2024,01,15</time>
+                </div>
+                <div class="blog-card__body">
+                  <p class="blog-card__text">
+                    「キャリアの舞台裏」では、当社の社員たちが日々の仕事において直面する様々な挑戦や成長の瞬間を赤裸々にお届けします。
 
-  </header>
-  <main>
+                    失敗から学び、成功への道のり、そして仕事とプライベートのバランスなど、仕事の裏側に潜むリアルなエピソードを探求します。<br><br>
+                    また、新しいプロジェクトやアイデアの裏話、技術者たちが直面する課題や喜びも垣間見ることができます。舞台裏で繰り広げられる社員たちの情熱と創造力に触れ、私たちの組織文化や価値観をより深く知ることができるコーナーです。<br><br>
+                    未知の領域に挑む仲間たちの姿勢や仕事にかける情熱を通じて、キャリアの舞台裏に光を当て、共感と学びを提供します。
+                  </p>
+                </div>
+              </a>
+              <!-- pagination -->
+              <div class="page-blog-details__pagination sub-pagination">
+                <div class="wp-pagenavi" role="navigation">
+                  <a class="previouspostslink" rel="prev" href="/page/1/">
+                    <img src="./assets/images/common/paginavi-left.png" alt="Previous">
+                  </a>
+                  <a class="back-to-list" href="blog.html">一覧に戻る</a>
+                  <a class="nextpostslink" rel="next" href="/page/3/">
+                    <img src="./assets/images/common/paginavi-right.png" alt="Next">
+                  </a>
+                </div>
+              </div>
+              <!-- TOPにもどる -->
+              <div class="page-blog-details__back-to-top">
+                <a href="index.html" class="back-to-top">
+                  TOPに戻る
+                </a>
+              </div>
 
-  </main>
-  <footer>
-
-  </footer>
+            </div>
+          </div>
+        </section>
+        <!-- お問い合わせ  -->
+        <section class="page-service__contact sub-contact">
+          <div class="sub-contact__inner inner">
+            <!-- お問い合わせカード contact-us -->
+            <div class="contact-us-card">
+              <figure class="contact-us-card__image">
+                <img src="./assets/images/common/contact-top-01.jpg" alt="時計が映るPCの画像">
+              </figure>
+              <div class="contact-us-card__body">
+                <h3 class="contact-us-card__title">
+                  お問い合わせ
+                  <span>contact us</span>
+                </h3>
+                <p class="contact-us-card__text">
+                  お問い合わせいただきありがとうございます。<br>
+                  ご質問やご要望にお応えするため、お問い合わせフォームより必要事項をご記入のうえ、送信してください。<br>
+                  迅速に対応させていただきます。
+                </p>
+                <!-- ボタン（緑） -->
+                <div class="contact-us-card__button">
+                  <a href="contact/index.html" class="button button--green">
+                    <span>contact us</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!-- フッター -->
+      <footer id="footer" class="top-footer footer">
+        <div class="footer__inner">
+          <!-- フッターロゴ -->
+          <div class="footer__logo footer-logo">
+            <a href="index.html" class="footer-logo__link">
+              <h2 class="footer-logo__image">
+                <img src="./assets/images/common/logo.png" alt="フッターロゴ">
+              </h2>
+            </a>
+          </div>
+          <!-- フッターコンテンツ -->
+          <div class="footer__contents-wrapper">
+            <!-- 住所 -->
+            <div class="footer__address-wrapper">
+              <p class="footer__address-text">
+                〒540-0002<br>
+                大阪府大阪市中央区大阪城1-1
+              </p>
+              <p class="footer__address-text">
+                TEL:111-111-1234
+              </p>
+              <p class="footer__address-text">
+                TEL:111-111-1235
+              </p>
+              <!-- アイコン -->
+              <div class="footer__icon-wrapper">
+                <img src="./assets/images/common/icon-mail.png" alt="メールアイコン">
+                <img src="./assets/images/common/icon-instagram.png" alt="インスタグラムアイコン">
+              </div>
+            </div>
+            <!-- フッターナビ -->
+            <nav class="footer__nav footer-nav">
+              <ul class="footer-nav__items">
+                <li class="footer-nav__item">
+                  <a href="index.html" class="uppercase">total</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="about-us.html">私たちについて</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="service.html">サービス</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="works.html">就職実績</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="information.html">会社概要</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="blog.html">ブログ</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="contact/index.html">お問い合わせ</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- コピーライト -->
+          <div class="footer__copyright">
+            <p>&copy;2023 code ups.</p>
+          </div>
+        </div>
+      </footer>
+    </div><!-- main__container -->
+  </div><!-- body__container -->
 </body>
-
 </html>

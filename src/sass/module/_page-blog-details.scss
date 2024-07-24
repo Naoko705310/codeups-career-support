@@ -1,0 +1,51 @@
+@use "global" as *;
+
+// ブログ詳細
+
+.page-blog-details {
+  margin-top: rem(-366);
+  @include mq(md) {
+    margin-top: rem(-276);
+  }
+}
+
+.page-blog-details__inner.inner {
+  max-width: rem(1000+50);
+}
+
+.inner {
+
+}
+
+.page-blog-details__container {
+  background-color: $white;
+  border: 1px solid $color-accent;
+  border-radius: rem(10);
+  padding: rem(24) rem(14) rem(40) rem(14);
+  @include mq(md) {
+    padding: rem(80) rem(135);
+  }
+}
+
+.blog-details__blog-card {
+
+}
+
+
+.page-blog-details__pagination {
+  margin-top: rem(40);
+  @include mq(md) {
+    margin-top: rem(98);
+  }
+}
+
+.page-blog-details__back-to-top {
+  margin-top: rem(40);
+  text-align: center;
+  @include mq(md) {
+    margin-top: rem(64);
+  }
+}
+
+
+
