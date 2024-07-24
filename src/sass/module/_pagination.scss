@@ -1,6 +1,6 @@
 @use "global" as *;
 
-// wp-PageNaviで実装したので、静的コーディングで書いたcssではなく、wp-PageNaviで生成されたHTMLに、cssをあてる。
+// wp-PageNavi
 
 // ページネーションのコンテナ
 .wp-pagenavi {
@@ -8,15 +8,6 @@
   justify-content: center;
   align-items: center;
   gap: rem(12);
-}
-
-// 現在のページ番号、hover要素のスタイル
-.wp-pagenavi .page.current,
-.wp-pagenavi .previouspostslink:hover,
-.wp-pagenavi .page:hover,
-.wp-pagenavi .current:hover,
-.wp-pagenavi .nextpostslink:hover {
-  color: $white;
 }
 
 // 前への矢印、ページ番号、次への矢印のスタイル
@@ -45,6 +36,15 @@
   color: $color-accent;
 }
 
+// 現在のページ番号、hover要素のスタイル
+.wp-pagenavi .page.current,
+.wp-pagenavi .previouspostslink:hover,
+.wp-pagenavi .page:hover,
+.wp-pagenavi .current:hover,
+.wp-pagenavi .nextpostslink:hover {
+  color: $white;
+}
+
 // 擬似要素適用のため
 .wp-pagenavi .page.larger {
   position: relative;
@@ -60,7 +60,7 @@
   width: rem(40); // 40px四方の四角い背景
   height: rem(40); // 40px四方の四角い背景
   background-color: $color-accent;
-  transform: translate(-50%, -50%) rotate(45deg); // 中央に配置し、45度回転
+  transform: translate(-50%, -50%) rotate(45deg); 
   z-index: -1; // 背景をテキストの後ろに配置
 }
 
@@ -68,6 +68,7 @@
 .wp-pagenavi .previouspostslink {
   margin-right: rem(28);
 }
+
 .wp-pagenavi .nextpostslink {
   margin-left: rem(28);
 }
