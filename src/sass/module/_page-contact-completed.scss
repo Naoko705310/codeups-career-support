@@ -1,0 +1,64 @@
+@use "global" as *;
+
+// お問い合わせ完了ページ
+
+.page-contact-completed {
+  margin-top: rem(-366);
+  @include mq(md) {
+    margin-top: rem(-276);
+  }
+}
+
+.page-contact-completed__inner.inner {
+  max-width: rem(1000+50);
+}
+
+.contact-form-completed .contact-form__label--required {
+  display: inline-block;
+}
+
+// お問い合わせ完了のinput-area文字色
+.contact-form-completed .contact-form__input-area {
+  color: #BABABA;
+  @include mq(md) {
+    color: black;
+  }
+}
+
+// お問い合わせ完了のtextarea文字色
+.contact-form-completed .contact-form__text-area {
+  color: #BABABA;
+  @include mq(md) {
+    color: $black;
+  }
+}
+
+.contact-form-completed__button-wrapper {
+  margin-top: rem(56);
+  text-align: center;
+  @include mq(md) {
+    display: flex;
+    justify-content: center;
+    gap: rem(80);
+  }
+}
+
+.contact-form-completed__button-revise {
+  margin-top: rem(40);
+  @include mq(md) {
+    margin-top: 0;
+  }
+}
+
+.page-contact-completed__contact {
+  margin-top: rem(80);
+  @include mq(md) {
+    display: none;
+  }
+}
+
+.page-contact-completed__footer {
+  @include mq(md) {
+    margin-top: rem(120);
+  }
+}

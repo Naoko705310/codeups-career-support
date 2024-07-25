@@ -60,6 +60,39 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 
 
 
+/* --------------------------------------------
+/* お問い合わせフォーム
+（訂正で前のページに戻った時、入力内容をセッションストレージに保持する）
+/* -------------------------------------------- */
+
+// const $form = $('form');
+// const $inputs = $form.find('input, textarea');
+
+// // フォームのデータをセッションストレージに保存
+// $inputs.on('input', function() {
+//   $inputs.each(function() {
+//     sessionStorage.setItem($(this).attr('name'), $(this).val());
+//   });
+// });
+
+// // セッションストレージからデータを復元
+// $inputs.each(function() {
+//   const value = sessionStorage.getItem($(this).attr('name'));
+//   if (value) {
+//     $(this).val(value);
+//   }
+// });
+
+// // フォームが正常に送信されたら、セッションストレージをクリアする
+//     const $form = $('form');
+//     $form.on('submit', function() {
+//         sessionStorage.clear();
+//     });
+
+
+
+
+
   /* --------------------------------------------
   /* お問い合わせフォーム（バリデーション）
   /* -------------------------------------------- */
