@@ -45,7 +45,7 @@
     <header class="header js-header">
       <div class="header__inner">
         <!-- ヘッダーロゴ -->
-        <h1 class="header__logo header-logo">
+        <h1 id="header-logo" class="header__logo header-logo">
           <a href="/index.html" class="header-logo__link">
             <img src="../assets/images/common/logo.png" alt="ヘッダーロゴ">
           </a>
@@ -155,7 +155,7 @@
           <div class="page-contact__inner inner">
             <div class="page-contact__contact-form">
               <!-- お問い合わせフォーム -->
-              <form action="mail.php" method="post" id="contact-form" class="contact-form contact-form__layout">
+              <form action="completed.html" method="post" id="contact-form" class="contact-form contact-form__layout">
                 <!-- 名前 -->
                 <dl class="contact-form__item">
                   <dt>
@@ -230,7 +230,7 @@
                 </dl>
                 <!-- 送信ボタン -->
                 <div class="contact-form__button">
-                  <button id="js-submit" class="button button--green button--contact" type="button" onclick="window.location.href='completed.html'">
+                  <button id="js-submit" class="button button--green button--contact" type="submit">
                     <span>確認する</span>
                   </button>
                 </div>
@@ -272,9 +272,13 @@
             </div>
           </div>
         </section>
+        <!-- TOPへ戻るボタン -->
+        <a href="#top" class="js-button-to-top button-to-top">
+          <img src="../assets/images/common/button-to-top.png" alt="トップへ戻るボタンの画像">
+        </a>
       </main>
       <!-- フッター -->
-      <footer id="footer" class="top-footer footer">
+      <footer class="sub-footer footer">
         <div class="footer__inner">
           <!-- フッターロゴ -->
           <div class="footer__logo footer-logo">

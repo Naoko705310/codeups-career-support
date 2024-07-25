@@ -24,7 +24,7 @@
   <!-- ここからFacebookカードの記述 -->
   <meta property="fb:app_id" content="FacebookアプリID">
   <!-- ファビコン -->
-  <link rel="icon" href="./assets/images/common/favicon.ico">
+  <link rel="icon" href="../assets/images/common/favicon.ico">
   <!-- Google フォント -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,11 +33,11 @@
   <!-- poppins -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <!-- CSS -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
   <!-- JavaScript -->
   <!-- バージョン確認 -->
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-  <script defer src="./assets/js/script.js"></script>
+  <script defer src="../assets/js/script.js"></script>
 </head>
 <body>
   <div class="body__container">
@@ -45,7 +45,7 @@
     <header class="header js-header">
       <div class="header__inner">
         <!-- ヘッダーロゴ -->
-        <h1 class="header__logo header-logo">
+        <h1 id="header-logo" class="header__logo header-logo">
           <a href="/index.html" class="header-logo__link">
             <img src="../assets/images/common/logo.png" alt="ヘッダーロゴ">
           </a>
@@ -141,22 +141,34 @@
     <div class="main__container">
       <main>
         <!-- ファーストビュー -->
-        <section id="top-fv" class="top-fv">
+        <section id="top-fv" class="top-fv page-contact-thanks-fv">
           <div class="top-fv__inner inner">
             <div class="top-fv__heading">
               <h2 class="top-fv__main-copy page-fv__main-copy">
                 お問い合わせ<br>
                 ありがとうございます。
               </h2>
+              <p class="page-contact-thanks__text">
+                このたびは、お問い合わせ頂き誠にありがとうございます。<br>
+                お送り頂きました内容を確認の上、3営業日以内に折り返しご連絡させて頂きます。<br>
+                また、ご記入頂いたメールアドレスへ、自動返信の確認メールをお送りしております。
+              </p>
+              <!-- ボタン（緑） -->
+              <div class="page-contact-thanks__button">
+                <a href="/index.html" class="button button--green">
+                  <span>TOPへ戻る</span>
+                </a>
+              </div>
             </div>
           </div>
         </section>
-        <!-- 下層ページコンテンツ -->
-
-
+        <!-- TOPへ戻るボタン -->
+        <a href="#top" class="js-button-to-top button-to-top">
+          <img src="../assets/images/common/button-to-top.png" alt="トップへ戻るボタンの画像">
+        </a>
       </main>
       <!-- フッター -->
-      <footer id="footer" class="top-footer footer">
+      <footer class="sub-footer footer">
         <div class="footer__inner">
           <!-- フッターロゴ -->
           <div class="footer__logo footer-logo">

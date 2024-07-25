@@ -45,7 +45,7 @@
     <header class="header js-header">
       <div class="header__inner">
         <!-- ヘッダーロゴ -->
-        <h1 class="header__logo header-logo">
+        <h1 id="header-logo" class="header__logo header-logo">
           <a href="/index.html" class="header-logo__link">
             <img src="../assets/images/common/logo.png" alt="ヘッダーロゴ">
           </a>
@@ -155,80 +155,82 @@
           <div class="page-contact-completed__inner inner">
             <div class="page-contact-completed__contact-form">
               <div class="contact-form contact-form-completed">
-                <dl class="contact-form__item">
-                  <dt>
-                    <p class="contact-form__label contact-form__label--required">
-                      お名前
-                    </p>
-                  </dt>
-                  <dd>
-                    <p class="contact-form__input-area">
-                      山田　太郎
-                    </p>
-                  </dd>
-                </dl>
-                <dl class="contact-form__item">
-                  <dt>
-                    <p class="contact-form__label">
-                      住所
-                    </p>
-                  </dt>
-                  <dd>
-                    <p class="contact-form__input-area">
-                      大阪府堺
-                    </p>
-                  </dd>
-                </dl>
-                <dl class="contact-form__item">
-                  <dt>
-                    <p class="contact-form__label contact-form__label--required">
-                      メールアドレス
-                    </p>
-                  </dt>
-                  <dd>
-                    <p class="contact-form__input-area">
-                      info@abc.com
-                    </p>
-                  </dd>
-                </dl>
-                <dl class="contact-form__item">
-                  <dt>
-                    <p class="contact-form__label">
-                      電話番号
-                    </p>
-                  </dt>
-                  <dd>
-                    <p class="contact-form__input-area">
-                      000-0000-0000
-                    </p>
-                  </dd>
-                </dl>
-                <dl class="contact-form__item">
-                  <dt>
-                    <p class="contact-form__label">
-                      お問い合わせ詳細
-                    </p>
-                  </dt>
-                  <dd>
-                    <p class="contact-form__text-area">
-                      ここにお問い合わせ内容が入ります。
-                    </p>
-                  </dd>
-                </dl>
-                <div class="contact-form-completed__button-wrapper">
-                  <!-- 送信するボタン -->
-                  <div class="contact-form-completed__button-submit">
-                    <button id="js-submit-completed" class="button button--green button--contact" type="submit" value="送信する">
-                      <span>送信する</span>
-                    </button>
+                <form action="your_submission_endpoint" method="post">
+                  <dl class="contact-form__item">
+                    <dt>
+                      <p class="contact-form__label contact-form__label--required">
+                        お名前
+                      </p>
+                    </dt>
+                    <dd>
+                      <p class="contact-form__input-area">
+                        山田　太郎
+                      </p>
+                    </dd>
+                  </dl>
+                  <dl class="contact-form__item">
+                    <dt>
+                      <p class="contact-form__label">
+                        住所
+                      </p>
+                    </dt>
+                    <dd>
+                      <p class="contact-form__input-area">
+                        大阪府堺
+                      </p>
+                    </dd>
+                  </dl>
+                  <dl class="contact-form__item">
+                    <dt>
+                      <p class="contact-form__label contact-form__label--required">
+                        メールアドレス
+                      </p>
+                    </dt>
+                    <dd>
+                      <p class="contact-form__input-area">
+                        info@abc.com
+                      </p>
+                    </dd>
+                  </dl>
+                  <dl class="contact-form__item">
+                    <dt>
+                      <p class="contact-form__label">
+                        電話番号
+                      </p>
+                    </dt>
+                    <dd>
+                      <p class="contact-form__input-area">
+                        000-0000-0000
+                      </p>
+                    </dd>
+                  </dl>
+                  <dl class="contact-form__item">
+                    <dt>
+                      <p class="contact-form__label">
+                        お問い合わせ詳細
+                      </p>
+                    </dt>
+                    <dd>
+                      <p class="contact-form__text-area">
+                        ここにお問い合わせ内容が入ります。
+                      </p>
+                    </dd>
+                  </dl>
+                  <div class="contact-form-completed__button-wrapper">
+                    <!-- 送信するボタン -->
+                    <div class="contact-form-completed__button-submit">
+                      <button id="js-submit-completed" class="button button--green button--contact" type="submit">
+                        <span>送信する</span>
+                      </button>
+                    </div>
+                    <!-- 訂正するボタン -->
+                    <div class="contact-form-completed__button-revise">
+                      <a href="../contact/index.html" class="button button--green button--contact">
+                        <span>訂正する</span>
+                      </a>
+                    </div>
                   </div>
-                  <!-- 訂正するボタン -->
-                  <div class="contact-form-completed__button-revise">
-                    <a href="../contact/index.html" class="button button--green button--contact">
-                      <span>訂正する</span>
-                    </a>
-                  </div>
-                </div>
+                </form>
               </div>
             </div>
           </div>
@@ -261,9 +263,13 @@
             </div>
           </div>
         </section>
+        <!-- TOPへ戻るボタン -->
+        <a href="#top" class="js-button-to-top button-to-top">
+          <img src="../assets/images/common/button-to-top.png" alt="トップへ戻るボタンの画像">
+        </a>
       </main>
       <!-- フッター -->
-      <footer id="footer" class="page-contact-completed__footer footer">
+      <footer class="sub__footer footer page-contact-completed__footer ">
         <div class="footer__inner">
           <!-- フッターロゴ -->
           <div class="footer__logo footer-logo">

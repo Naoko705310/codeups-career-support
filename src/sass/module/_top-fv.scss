@@ -17,10 +17,6 @@
   }
 }
 
-.top-fv__heading {
-
-}
-
 .top-fv__main-copy {
   font-family: $second-font-family;
   font-size: rem(24);
@@ -41,3 +37,6 @@
   margin-top: rem(16);
 }
 
+.top-fv.page-contact-thanks-fv {
+  z-index: 1;
+}
