@@ -88,3 +88,33 @@
   margin-top: rem(4);
 }
 
+// カードの角丸
+.archievement-card--01 .archievement-card__image {
+  border-radius: rem(10) 0 0 0;
+}
+
+.archievement-card--01 .archievement-card__image img {
+  border-radius: rem(10) 0 0 0;
+}
+.archievement-card--02 .archievement-card__image {
+  border-radius: 0 rem(10) 0 0;
+}
+
+.archievement-card--02 .archievement-card__image img {
+  border-radius: 0 rem(10) 0 0;
+}
+.archievement-card--03 .archievement-card__image {
+  border-radius: 0 0 0 rem(10);
+}
+
+.archievement-card--03 .archievement-card__image img {
+  border-radius: 0 0 0 rem(10);
+}
+.archievement-card--04 .archievement-card__image {
+  border-radius: 0 0 rem(10) 0;
+}
+
+.archievement-card--04 .archievement-card__image img {
+  border-radius: 0 0 rem(10) 0;
+}
+

@@ -16,6 +16,7 @@
 
 .about-us-carrier-support__image {
   position: relative;
+  border-radius: rem(10);
   @include mq(md) {
     // width: calc(500 / 960 * 100%);
   }
@@ -36,6 +37,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   object-fit: cover;
+  border-radius: rem(10);
 }
 
 .about-us-carrier-support__body {

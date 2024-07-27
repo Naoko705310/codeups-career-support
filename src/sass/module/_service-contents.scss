@@ -1,6 +1,7 @@
 @use "global" as *;
 
 .service-contents__container {
+  background-color: $white;
   border: 1px solid $color-accent;
   border-radius: rem(10);
   padding-top: rem(24);

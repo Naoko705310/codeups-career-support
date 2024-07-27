@@ -1,21 +1,30 @@
 @use "global" as *;
 
-// top-fvと内容が同じなら、このシートはあとで削除する
-// htmlの、必要な要素に、page-fvクラスを追記して、スタイルを変更
-
 .page-fv {
-  // height: rem(667);//要確認
-  // background-image: url('../images/common/fv-top.jpg'); 
-  // background-size: cover;
-  // background-position: center;
+  height: rem(667);
+  background-image: url('../images/common/fv-top.jpg'); 
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: -1;
+  // z-index: -5;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  @include mq(md) {
+    height: rem(768);
+    left: rem(200);
+  }
 }
 
 .page-fv__inner {
-  // height: inherit;
-  // padding-top: rem(200);
-  // @include mq(md) {
-  //   padding-left: rem(120);
-  // }
+  height: inherit;
+  margin-top: rem(144);
+  @include mq(md) {
+    max-width: rem(1000+50);
+    margin-top: rem(180);
+  }
 }
 
 .page-fv__heading {
@@ -23,22 +32,38 @@
 }
 
 .page-fv__main-copy {
-  font-family: $base-font-family;
+  font-family: $second-font-family;
   font-size: rem(32);
   color: $white;
   font-weight: $bold;
   line-height: 1.5;
+  padding-left: rem(19);
+  position: relative;
   @include mq(md) {
     font-size: rem(64);
   }
 }
 
-.page-fv__sub-copy {
-  // font-family: $base-font-family;
-  // font-size: rem(16);
-  // color: $white;
-  // font-weight: $bold;
-  // line-height: 1.5;
-  // margin-top: rem(16);
+.page-fv__main-copy:before {
+  display: block;
+  content: "";
+  background-image: url('../images/common/orange-circle.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: rem(175);
+  height: rem(75);
+  position: absolute;
+  left: 0;
+  bottom: rem(-21);
+  z-index: -1;
+  @include mq(md) {
+    width: rem(320);
+    height: rem(155);
+    bottom: rem(-41);
+  }
 }
 
+.page-fv__main-copy span {
+  position: relative;
+  z-index: -2;
+}

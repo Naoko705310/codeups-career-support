@@ -1,5 +1,13 @@
 @use "global" as *;
 
+// 中身はないが、footer位置調整のため高さ設定
+.page-contact-thanks {
+  height: rem(667);
+  @include mq(md) {
+    height: rem(768);
+  }
+}
+
 .page-contact-thanks__text {
   font-family: $base-font-family;
   font-size: rem(16);
@@ -17,5 +25,9 @@
   @include mq(md) {
     margin-top: rem(54);
   }
+}
 
+.page-contact-thanks__footer.footer {
+  position: relative;
+  z-index: 99;
 }

@@ -47,7 +47,7 @@
         <!-- ヘッダーロゴ -->
         <h1 id="header-logo" class="header__logo header-logo">
           <a href="/index.html" class="header-logo__link">
-            <img src="../assets/images/common/logo.png" alt="ヘッダーロゴ">
+            <img id="js-header-logo" src="../assets/images/common/logo.png" alt="ヘッダーロゴ">
           </a>
         </h1>
         <!-- ハンバーガー -->
@@ -138,13 +138,13 @@
       </div>
     </header>
     <!-- ヘッダーここまで -->
-    <div class="main__container">
+    <div class="main__container main__container--thanks">
       <main>
         <!-- ファーストビュー -->
-        <section id="top-fv" class="top-fv page-contact-thanks-fv">
-          <div class="top-fv__inner inner">
-            <div class="top-fv__heading">
-              <h2 class="top-fv__main-copy page-fv__main-copy">
+        <section id="page-fv" class="page-fv page-contact-thanks-fv">
+          <div class="page-fv__inner inner">
+            <div class="page-fv__heading">
+              <h2 class="page-fv__main-copy">
                 お問い合わせ<br>
                 ありがとうございます。
               </h2>
@@ -162,13 +162,15 @@
             </div>
           </div>
         </section>
+        <!-- 下層ページコンテンツ -->
+        <section class="page-contact-thanks"></section>
         <!-- TOPへ戻るボタン -->
         <a href="#top" class="js-button-to-top button-to-top">
           <img src="../assets/images/common/button-to-top.png" alt="トップへ戻るボタンの画像">
         </a>
       </main>
       <!-- フッター -->
-      <footer class="sub-footer footer">
+      <footer class="page-contact-thanks__footer sub-footer footer">
         <div class="footer__inner">
           <!-- フッターロゴ -->
           <div class="footer__logo footer-logo">

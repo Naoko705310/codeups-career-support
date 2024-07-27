@@ -72,3 +72,14 @@
 .button--contact {
   width: rem(186);
 }
+
+// 訂正するボタン（お問合せ完了ページ）
+.button--revise span {
+  padding-left: rem(42);
+  padding-right: 0;
+}
+
+.button--revise span:after {
+  left: 0;
+  transform: translateY(-50%) scaleX(-1); 
+}

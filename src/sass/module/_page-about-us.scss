@@ -1,5 +1,12 @@
 @use "global" as *;
 
+.page-about-us {
+  margin-top: rem(301);
+  @include mq(md) {
+    margin-top: rem(490);
+  }
+}
+
 .page-about-us__inner.inner {
   @include mq(md) {
     max-width: rem(1000+50);
@@ -8,10 +15,10 @@
 
 .page-about-us__policy {
   position: relative;
-  z-index: -3;
-  margin-top: rem(-366);
+  // z-index: -3;
+  // margin-top: rem(-366);
   @include mq(md) {
-    margin-top: rem(-278);
+    // margin-top: rem(-278);
   }
 }
 

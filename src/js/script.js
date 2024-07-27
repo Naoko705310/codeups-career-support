@@ -4,100 +4,95 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   /* ハンバーガーメニュー
   /* -------------------------------------------- */
 
+//ヘッダーロゴの画像パスを更新する関数
+function updateHeaderLogo(isOpen) {
+  var isContactPage = window.location.pathname.includes('/contact/');
+  var pathPrefix = isContactPage ? '../assets/images/common/' : './assets/images/common/';
+  var logoSrc = isOpen ? pathPrefix + 'logo-sp.png' : pathPrefix + 'logo.png';
+  $('#js-header-logo').attr('src', logoSrc);
+}
+
   // ハンバーガーメニューのクリックイベント
-  $(".js-hamburger").on("click", function (event) {
-    event.preventDefault(); // デフォルトのイベント行動をキャンセル
-    event.stopImmediatePropagation(); // イベント伝播の即時停止
-    console.log("Hamburger clicked");
-
-    if ($(this).hasClass("is-open")) {
-      console.log("Menu is open, now closing...");
-      closeDrawerMenu();
+  $('.js-hamburger').click(function() {
+    // ハンバーガーアイコンのアニメーション
+    $(this).toggleClass('is-open');
+    
+    // ドロワーメニューの開閉
+    if ($('.js-drawer-menu').hasClass('is-open')) {
+      $('.js-drawer-menu').removeClass('is-open').slideUp();
+      updateHeaderLogo(false); // ロゴの更新
+      $('body').css('overflow', 'auto');
     } else {
-      console.log("Menu is closed, now opening...");
-      openDrawerMenu();
+      $('.js-drawer-menu').addClass('is-open').slideDown();
+      updateHeaderLogo(true); // ロゴの更新
+      $('body').css('overflow', 'hidden');
     }
   });
 
-  // ロゴ画像のクリックイベントを設定
-  const headerLogo = document.getElementById('header-logo');
-  if (headerLogo) {
-    headerLogo.addEventListener('click', function(event) {
-      event.preventDefault();
-      console.log('ヘッダーロゴがクリックされました');
-      // ここにイベント処理のコードを追加
-    });
-  }
-
-  // ドロワーメニューを開く関数
-  function openDrawerMenu() {
-    console.log("Opening drawer menu...");
-    $(".js-drawer-menu").fadeIn();
-    $(".js-hamburger").addClass("is-open");
-    $("body").css("overflow", "hidden");
-    $(".header-logo img").attr("src", "./assets/images/common/logo-sp.png"); // ロゴ画像を変更
-  }
-
-  // ドロワーメニューを閉じる関数
-  function closeDrawerMenu() {
-    console.log("Closing drawer menu...");
-    $(".js-drawer-menu").fadeOut();
-    $(".js-hamburger").removeClass("is-open");
-    $("body").css("overflow", "auto");
-    $(".header-logo img").attr("src", "./assets/images/common/logo.png"); // ロゴ画像を元に戻す
-  }
-
-  // 画面幅が768pxを超えたらメニューを閉じる
-  $(window).on("resize", function () {
+  // 画面幅が768pxを超えた時の処理
+  $(window).resize(function() {
     if ($(window).width() > 768) {
-      if ($(".js-hamburger").hasClass("is-open")) {
-        console.log("Window resized to more than 768px, closing menu...");
-        closeDrawerMenu();
-      }
+      $('.js-drawer-menu').removeClass('is-open').css('display', 'none');
+      updateHeaderLogo(false); // ロゴの更新
+      $('.js-hamburger').removeClass('is-open'); // ハンバーガーアイコンのリセット
+      $('body').css('overflow', 'auto'); // スクロール禁止の解除
     }
   });
 
-  // ページ読み込み時に画面幅が768pxを超えたらメニューを閉じる
+  // 初期表示時の画面幅チェック
   if ($(window).width() > 768) {
-    if ($(".js-hamburger").hasClass("is-open")) {
-      console.log("Page loaded with width more than 768px, closing menu...");
-      closeDrawerMenu();
-    }
+    $('.js-drawer-menu').removeClass('is-open').css('display', 'none');
+    updateHeaderLogo(false); // ロゴの更新
+    $('.js-hamburger').removeClass('is-open'); // ハンバーガーアイコンのリセット
+    $('body').css('overflow', 'auto'); // スクロール禁止の解除
   }
 
-  // button--sp-navのクリックイベント
-  $(".button--sp-nav").on("click", function () {
-    console.log("SP Nav button clicked, closing menu...");
-    closeDrawerMenu();
-  });
+  // 元のコード
 
-  /* --------------------------------------------
-  /* お問い合わせフォーム
-  （訂正で前のページに戻った時、入力内容をセッションストレージに保持する）
-  /* -------------------------------------------- */
+  // // ヘッダーロゴの画像パスを更新する関数
+  // function updateHeaderLogo(type) {
+  //   var pathPrefix = window.location.pathname.includes('/contact/') ? '../assets/images/common/' : './assets/images/common/';
+  //   var logoSrc = type === 'sp' ? pathPrefix + 'logo-sp.png' : pathPrefix + 'logo.png';
+  //   $('#header-logo img').attr('src', logoSrc);
+  // }
 
-  // const $form = $('form');
-  // const $inputs = $form.find('input, textarea');
-
-  // // フォームのデータをセッションストレージに保存
-  // $inputs.on('input', function() {
-  //   $inputs.each(function() {
-  //     sessionStorage.setItem($(this).attr('name'), $(this).val());
-  //   });
-  // });
-
-  // // セッションストレージからデータを復元
-  // $inputs.each(function() {
-  //   const value = sessionStorage.getItem($(this).attr('name'));
-  //   if (value) {
-  //     $(this).val(value);
+  // // ハンバーガーメニューのクリックイベント
+  // $('.js-hamburger').click(function() {
+  //   // ハンバーガーアイコンのアニメーション
+  //   $(this).toggleClass('is-open');
+    
+  //   // ドロワーメニューの開閉
+  //   if ($('.js-drawer-menu').hasClass('is-open')) {
+  //     $('.js-drawer-menu').removeClass('is-open').slideUp();
+  //     $('#header-logo img').attr('src', './assets/images/common/logo.png');
+  //     $('body').css('overflow', 'auto');
+  //   } else {
+  //     $('.js-drawer-menu').addClass('is-open').slideDown();
+  //     $('#header-logo img').attr('src', './assets/images/common/logo-sp.png');
+  //     $('body').css('overflow', 'hidden');
   //   }
   // });
 
-  // // フォームが正常に送信されたら、セッションストレージをクリアする
-  // const $form = $('form');
-  // $form.on('submit', function() {
-  //   sessionStorage.clear();
+  // // 画面幅が768pxを超えた時の処理
+  // $(window).resize(function() {
+  //   if ($(window).width() > 768) {
+  //     $('.js-drawer-menu').removeClass('is-open').css('display', 'none');
+  //     $('#header-logo img').attr('src', './assets/images/common/logo.png');
+  //     $('.js-hamburger').removeClass('is-open'); // ハンバーガーアイコンのリセット
+  //     $('body').css('overflow', 'auto'); // スクロール禁止の解除
+  //   }
   // });
+
+  // // 初期表示時の画面幅チェック
+  // if ($(window).width() > 768) {
+  //   $('.js-drawer-menu').removeClass('is-open').css('display', 'none');
+  //   $('#header-logo img').attr('src', './assets/images/common/logo.png');
+  //   $('.js-hamburger').removeClass('is-open'); // ハンバーガーアイコンのリセット
+  //   $('body').css('overflow', 'auto'); // スクロール禁止の解除
+  // }
+
+
+
+
 
 }); // この閉じタグは消さない！！！！！

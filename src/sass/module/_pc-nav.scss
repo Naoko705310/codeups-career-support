@@ -4,7 +4,7 @@
   display: none; //最初(SP)は非表示
   @include mq(md) {
     width: 100%;
-    margin-top: rem(28);
+    // margin-top: rem(28);
   }
 }
 
@@ -13,7 +13,7 @@
   flex-direction: column;
   gap: rem(28);
   text-align: center;
-  margin-top: rem(33);
+  // margin-top: rem(33);
 }
 
 .pc-nav__items li {

@@ -40,7 +40,7 @@
 
 .hamburger.is-open span:nth-child(1) {
   top: rem(11);
-  transform: rotate(40deg);
+  transform: rotate(30deg);
 }
 
 .hamburger.is-open span:nth-child(2) {
@@ -49,6 +49,6 @@
 }
 
 .hamburger.is-open span:nth-child(3) {
-  top: rem(-11);
-  transform: rotate(-40deg);
+  top: rem(-12);
+  transform: rotate(-30deg);
 }

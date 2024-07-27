@@ -5,3 +5,10 @@
     margin-left: rem(200);
   }
 }
+
+.main__container--thanks {
+  height: rem(667);
+  @include mq(md) {
+    height: rem(768);
+  }
+}

@@ -9,7 +9,7 @@
   left: 0;
   right: 0;
   z-index: 99;
-  padding-top: rem(10);
+  // padding-top: rem(10);
   @include mq(md) {
     width: rem(200);
     position: fixed;
@@ -37,12 +37,14 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 rem(15);
+  margin-top: rem(10);
   @include mq(md) {
     display: block;
-    padding-top: rem(33);
+    padding-top: rem(32);
     padding-right: 0;
     padding-bottom: 0;
     padding-left: 0;
+    margin-top: 0;
   }
 }
 
@@ -67,4 +69,8 @@
   overflow: scroll; /* 縦スクロールを可能にする */
   padding: rem(115) rem(15) rem(55) rem(15);
   display: none; 
+}
+
+.header__pc-nav {
+  margin-top: rem(33);
 }
