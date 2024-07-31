@@ -1,18 +1,12 @@
 @use "global" as *;
 
-.sp-nav {
-
-}
+// sp-nav 
 
 .sp-nav__items {
   display: grid;
   grid-template-columns: 1fr;
   gap: rem(40);
   text-align: center;
-}
-
-.sp-nav__item {
-
 }
 
 .sp-nav__item a {

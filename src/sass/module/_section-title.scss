@@ -56,3 +56,16 @@
   z-index: 10;
   text-transform: capitalize;
 }
+
+// contact-us-cardのテキストを白に（トップと下層共通のオレンジ背景のカード）
+.section-title__jp--contact-us-card {
+  color: $white;
+  position: relative; 
+  z-index: 10; 
+}
+
+.section-title__en--contact-us-card {
+  color: $white;
+  position: relative; 
+  z-index: 10; 
+}

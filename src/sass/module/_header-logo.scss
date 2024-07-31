@@ -1,5 +1,7 @@
 @use "global" as *;
 
+// ヘッダーロゴ
+
 .header-logo {
   width: rem(120);
   @include mq(md) {

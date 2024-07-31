@@ -1,5 +1,7 @@
 @use "global" as *;
 
+// トップページのブログカード（下層とデザインが違う）
+
 .top-blog-card {
   display: flex;
   flex-direction: column;

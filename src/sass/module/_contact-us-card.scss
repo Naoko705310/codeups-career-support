@@ -1,5 +1,7 @@
 @use "global" as *;
 
+// トップ＆下層共通 contact-us-card（オレンジ背景）
+
 .contact-us-card {
   background-color: rgba($color-accent, 0.7); // 背景色を透過
   padding: rem(24) rem(14);

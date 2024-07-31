@@ -1,5 +1,7 @@
 @use "global" as *;
 
+// トップページ blog
+
 .top-blog {
   margin-top: rem(80);
   @include mq(md) {
@@ -14,11 +16,6 @@
   }
 }
 
-.top-blog__section-title {
-
-}
-
-
 .top-blog__items {
   display: grid;
   grid-template-columns: 1fr;
@@ -31,32 +28,8 @@
   }
 }
 
-.top-blog__item {
-
-}
-
-.top-blog-card {
-
-}
-
-.top-blog-card__image {
-
-}
-
-.top-blog-card__heading {
-
-}
-
-.top-blog-card__title {
-
-}
-
 .top-blog__button {
   margin-top: rem(64);
   text-align: center;
-}
-
-.button {
-
 }
 
