@@ -1,9 +1,6 @@
 @use "global" as *;
 
-
-.carrier-support__container {
-
-}
+// キャリアサポート
 
 .carrier-support__contents-wrapper {
   @include mq(md) {
@@ -17,9 +14,6 @@
 .carrier-support__image {
   position: relative;
   border-radius: rem(10);
-  @include mq(md) {
-    // width: calc(500 / 960 * 100%);
-  }
 }
 
 .carrier-support__image::before {
@@ -43,33 +37,9 @@
 .carrier-support__body {
   margin-top: rem(24);
   @include mq(md) {
-    // width: calc(420 / 960 * 100%);
     margin-top: 0;
   }
 }
-
-// .carrier-support__title {
-//   font-family: $base-font-family;
-//   font-size: rem(24);
-//   color: $black;
-//   font-weight: $bold;
-//   line-height: 1.5;
-//   @include mq(md) {
-//     font-size: rem(32);
-//   }
-// }
-
-// .carrier-support__title span {
-//   font-family: $base-font-family;
-//   font-size: rem(14);
-//   color: $color-accent;
-//   font-weight: $normal;
-//   line-height: 1.5;
-//   display: block;
-//   @include mq(md) {
-//     font-size: rem(16);
-//   }
-// }
 
 .carrier-support__text {
   font-family: $base-font-family;

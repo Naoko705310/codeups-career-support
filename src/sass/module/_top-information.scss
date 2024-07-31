@@ -1,5 +1,7 @@
 @use "global" as *;
 
+// トップページ information
+
 .top-information {
   margin-top: rem(80);
   @include mq(md) {

@@ -104,6 +104,13 @@
   width: rem(186);
 }
 
+// 送信ボタングレイアウト（送信させないとき）
+// .button--contact.disabled {
+//   background-color: #cccccc;
+//   color: #666666; 
+//   cursor: not-allowed; 
+// }
+
 // 訂正するボタン（お問合せ完了ページ）
 .button--revise span {
   padding-left: rem(42);

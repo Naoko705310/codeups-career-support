@@ -1,5 +1,6 @@
 @use "global" as *;
 
+// 下層ページ お問い合わせ（オレンジ背景）
 .sub-contact {
   margin-top: rem(80);
   @include mq(md) {

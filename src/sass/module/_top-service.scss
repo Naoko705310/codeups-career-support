@@ -1,5 +1,7 @@
 @use "global" as *;
 
+// トップページ サービス
+
 .top-service {
   margin-top: rem(520);
   @include mq(md) {

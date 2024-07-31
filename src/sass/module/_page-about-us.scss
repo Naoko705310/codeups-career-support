@@ -1,5 +1,6 @@
 @use "global" as *;
 
+// 下層ページ about 私たちについて
 .page-about-us {
   margin-top: rem(-276);//667-301
   @include mq(md) {
@@ -15,11 +16,6 @@
 
 .page-about-us__policy {
   position: relative;
-  // z-index: -3;
-  // margin-top: rem(-366);
-  @include mq(md) {
-    // margin-top: rem(-278);
-  }
 }
 
 .page-about-us__carrier-support {

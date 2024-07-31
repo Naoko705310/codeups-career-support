@@ -6,19 +6,13 @@
   margin-top: rem(-366);//667-301
   position: relative;
   z-index: 3;
-  // margin-top: rem(301);
   @include mq(md) {
     margin-top: rem(-276);//768-492
-    // margin-top: rem(492);
   }
 }
 
 .page-blog-details__inner.inner {
   max-width: rem(1000+50);
-}
-
-.inner {
-
 }
 
 .page-blog-details__container {
@@ -30,11 +24,6 @@
     padding: rem(80) rem(135);
   }
 }
-
-.blog-details__blog-card {
-
-}
-
 
 .page-blog-details__pagination {
   margin-top: rem(40);

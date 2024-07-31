@@ -1,12 +1,6 @@
 @use "global" as *;
 
-.top-archievement__section-title {
-
-}
-
-.section-title {
-
-}
+// セクションタイトル
 
 .section-title__jp {
   font-family: $base-font-family;
@@ -25,13 +19,14 @@
   color: $color-accent;
   font-weight: $normal;
   line-height: 1.5;
+  display: inline-block;
   @include mq(md) {
     font-size: rem(16);
   }
 }
 
 // 要確認
-.section-title__en span::first-letter {
+.section-title__en::first-letter {
   text-transform: uppercase;
 }
 

@@ -1,6 +1,7 @@
 @use "global" as *;
 
 // 数字でみるCodeUps カード
+
 .works-numbers-card {
   display: flex;
   gap: rem(28);
@@ -44,6 +45,7 @@
   line-height: 1.4;
 }
 
+// 年だけフォントサイズが違う
 .works-numbers-card__number--1998 {
   font-size: rem(80);
 }
@@ -60,16 +62,6 @@
     font-size: rem(18);
   }
 }
-// .works-numbers-card__number span {
-//   font-family: $base-font-family;
-//   font-size: rem(24);
-//   color: $black;
-//   font-weight: $normal;
-//   line-height: 1.5;
-//   @include mq(md) {
-//     font-size: rem(18);
-//   }
-// }
 
 .works-numbers-card__label {
   font-family: $base-font-family;

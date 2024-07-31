@@ -1,13 +1,8 @@
 @use "global" as *;
 
-// 中身はないが、footer位置調整のため高さ設定
-.page-contact-thanks {
-  // height: rem(667);
-  // @include mq(md) {
-  //   height: rem(768);
-  // }
-}
+// 下層ページ お問い合わせサンクス
 
+// 下層ページのFVにテキストを追加
 .page-contact-thanks__text {
   font-family: $base-font-family;
   font-size: rem(16);
@@ -15,8 +10,8 @@
   font-weight: $normal;
   line-height: 1.5;
   margin-top: rem(24);
-  position: relative; // 追加
-  z-index: 100; // 追加
+  position: relative; 
+  z-index: 100; 
   @include mq(md) {
     margin-top: rem(40);
   }
@@ -24,8 +19,8 @@
 
 .page-contact-thanks__button {
   margin-top: rem(40);
-  position: relative; // 追加
-  z-index: 101; // 追加
+  position: relative; 
+  z-index: 101; 
   @include mq(md) {
     margin-top: rem(54);
   }
