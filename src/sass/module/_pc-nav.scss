@@ -4,38 +4,43 @@
   display: none; //最初(SP)は非表示
   @include mq(md) {
     width: 100%;
-    // margin-top: rem(28);
   }
 }
 
 .pc-nav__items {
   display: flex;
   flex-direction: column;
-  gap: rem(28);
   text-align: center;
-  // margin-top: rem(33);
 }
 
 .pc-nav__items li {
-  padding-top: rem(28);
   border-top: 1px dotted #d4d4d4;
+  display: flex;
+  flex-direction: column;
 }
 
 .pc-nav__items li:last-child {
   background-color: $color-logo;
-  padding-bottom: rem(28);
   border-bottom: 1px dotted #d4d4d4;
 }
 
-// メニューアイテム
 .pc-nav__items li a { 
   font-family: $base-font-family;
   font-size: rem(16);
   color: #1f1f1f;
   font-weight: $normal;
   line-height: 1.5;
+  padding: rem(28) 0;
 }
 
+.pc-nav__item a:hover {
+  color: $color-accent;
+  background-color: #ffffff;
+}
+
+.pc-nav__item a:hover span {
+  color: $color-accent;
+}
 
 .pc-nav__item a span {
   font-family: $second-font-family;
@@ -47,11 +52,19 @@
   text-transform: capitalize;
 }
 
-// お問い合わせの文字色を白に
+// 「お問い合わせ」の文字色を白に
 .pc-nav__items li:last-child a {
   color: $white; 
 }
 
+.pc-nav__items li:last-child a:hover {
+  color: $color-accent; 
+}
+
 .pc-nav__items li:last-child a span {
   color: $white; 
+}
+
+.pc-nav__items li:last-child a:hover span {
+  color: $color-accent; 
 }

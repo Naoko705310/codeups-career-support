@@ -1,9 +1,9 @@
 @use "global" as *;
 
 .page-about-us {
-  margin-top: rem(301);
+  margin-top: rem(-276);//667-301
   @include mq(md) {
-    margin-top: rem(490);
+    margin-top: rem(-278);//768-490
   }
 }
 

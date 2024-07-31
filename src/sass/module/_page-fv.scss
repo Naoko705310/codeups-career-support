@@ -6,29 +6,26 @@
   background-size: cover;
   background-position: center;
   position: relative;
-  z-index: -1;
-  // z-index: -5;
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
+  // z-index: -1;
   @include mq(md) {
     height: rem(768);
-    left: rem(200);
   }
 }
 
 .page-fv__inner {
   height: inherit;
-  margin-top: rem(144);
+  padding-top: rem(144);
+  position: relative;
+  z-index: 1;
   @include mq(md) {
     max-width: rem(1000+50);
-    margin-top: rem(180);
+    padding-top: rem(180);
   }
 }
 
 .page-fv__heading {
-
+position: relative;
+z-index: 3;
 }
 
 .page-fv__main-copy {

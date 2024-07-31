@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.service-menu-card {
+.service-menu {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -10,13 +10,13 @@
   border-radius: rem(5);
 }
 
-.service-menu-card__image {
+.service-menu__image {
   width: rem(40);
   aspect-ratio: 40/40;
   margin-inline: auto ;
 }
 
-.service-menu-card__title {
+.service-menu__title {
   font-family: $base-font-family;
   font-size: rem(24);
   color: $white;
@@ -24,7 +24,7 @@
   line-height: 1.5;
 }
 
-.service-menu-card__text {
+.service-menu__text {
   font-family: $base-font-family;
   font-size: rem(14);
   color: $white;

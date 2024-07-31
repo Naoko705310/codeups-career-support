@@ -35,8 +35,7 @@
   <!-- CSS -->
   <link rel="stylesheet" href="./assets/css/style.css">
   <!-- JavaScript -->
-  <!-- バージョン確認 -->
-  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   <script defer src="./assets/js/script.js"></script>
 </head>
 <body>
@@ -168,7 +167,7 @@
                 </div>
                 <!-- インタビューカード群 -->
                 <ul class="works-interview__items interview-cards">
-                  <li class="works-interview__item">
+                  <li class="interview-cards__item">
                     <div class="interview-card">
                       <figure class="interview-card__image">
                         <img src="./assets/images/common/works-card-01.jpg" alt="こちらを振り向く女性の画像">
@@ -186,7 +185,7 @@
                       </div>
                     </div>
                   </li>
-                  <li class="works-interview__item">
+                  <li class="interview-cards__item">
                     <div class="interview-card">
                       <figure class="interview-card__image">
                         <img src="./assets/images/common/works-card-02.jpg" alt="こちらを振り向く女性の画像">
@@ -205,7 +204,7 @@
                       </div>
                     </div>
                   </li>
-                  <li class="works-interview__item">
+                  <li class="interview-cards__item">
                     <div class="interview-card">
                       <figure class="interview-card__image">
                         <img src="./assets/images/common/works-card-03.jpg" alt="こちらを振り向く女性の画像">
@@ -227,88 +226,90 @@
                 </ul>
               </div>
             </section>
-            <!-- 数字でみるCodeUps -->
-            <section class="page-works__numbers works-numbers">
-              <!-- セクションタイトル -->
-              <div class="works-numbers__section-title section-title">
-                <h2 class="section-title__jp">
-                  数字で見るCodeUps
-                </h2>
-                <span class="section-title__en">
-                  numbers
-                </span>
-              </div>
-              <div class="works-numbers__container">
-                <ul class="works-numbers__items works-numbers-cards">
-                    <li class="works-numbers-cards__item">
-                        <div class="works-numbers-card">
-                            <figure class="works-numbers-card__image">
-                                <img src="./assets/images/common/icon-works-01.png" alt="アイコン">
-                            </figure>
-                            <div class="works-numbers-card__body">
-                                <p class="works-numbers-card__number">98<span>%</span></p>
-                                <p class="works-numbers-card__label">就職率</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="works-numbers-cards__item">
-                        <div class="works-numbers-card">
-                            <figure class="works-numbers-card__image">
-                                <img src="./assets/images/common/icon-works-02.png" alt="アイコン">
-                            </figure>
-                            <div class="works-numbers-card__body">
-                                <p class="works-numbers-card__number">7<span>ヶ月</span></p>
-                                <p class="works-numbers-card__label">利用年月平均</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="works-numbers-cards__item">
-                        <div class="works-numbers-card">
-                            <figure class="works-numbers-card__image">
-                                <img src="./assets/images/common/icon-works-03.png" alt="アイコン">
-                            </figure>
-                            <div class="works-numbers-card__body">
-                                <p class="works-numbers-card__number">81<span>人</span></p>
-                                <p class="works-numbers-card__label">就職者数</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="works-numbers-cards__item">
-                        <div class="works-numbers-card">
-                            <figure class="works-numbers-card__image">
-                                <img src="./assets/images/common/icon-works-04.png" alt="アイコン">
-                            </figure>
-                            <div class="works-numbers-card__body">
-                                <p class="works-numbers-card__number">24</p>
-                                <p class="works-numbers-card__label">業種数</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="works-numbers-cards__item">
-                        <div class="works-numbers-card">
-                            <figure class="works-numbers-card__image">
-                                <img src="./assets/images/common/icon-works-05.png" alt="アイコン">
-                            </figure>
-                            <div class="works-numbers-card__body">
-                                <p class="works-numbers-card__number">99<span>%</span></p>
-                                <p class="works-numbers-card__label">満足度</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="works-numbers-cards__item">
-                        <div class="works-numbers-card">
-                            <figure class="works-numbers-card__image">
-                                <img src="./assets/images/common/icon-works-06.png" alt="アイコン">
-                            </figure>
-                            <div class="works-numbers-card__body">
-                                <p class="works-numbers-card__number works-numbers-card__number--1998 ">1998</p>
-                                <p class="works-numbers-card__label">設立</p>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
+<!-- 数字でみるCodeUps -->
+<section class="page-works__numbers works-numbers">
+  <!-- セクションタイトル -->
+  <div class="works-numbers__section-title section-title">
+    <h2 class="section-title__jp">
+      数字で見るCodeUps
+    </h2>
+    <span class="section-title__en">
+      numbers
+    </span>
+  </div>
+  <div class="works-numbers__container">
+    <ul class="works-numbers__items works-numbers-cards">
+        <li class="works-numbers-cards__item">
+            <div class="works-numbers-card">
+                <figure class="works-numbers-card__image">
+                    <img src="./assets/images/common/icon-works-01.png" alt="アイコン">
+                </figure>
+                <div class="works-numbers-card__body">
+                    <p id="box1" class="works-numbers-card__number box"><span class="number">98</span><span class="unit">%</span></p>
+                    <p class="works-numbers-card__label">就職率</p>
+                </div>
             </div>
-            </section>
+        </li>
+        <li class="works-numbers-cards__item">
+            <div class="works-numbers-card">
+                <figure class="works-numbers-card__image">
+                    <img src="./assets/images/common/icon-works-02.png" alt="アイコン">
+                </figure>
+                <div class="works-numbers-card__body">
+                    <p id="box2" class="works-numbers-card__number box"><span class="number">7</span><span class="unit">ヶ月</span></p>
+                    <p class="works-numbers-card__label">利用年月平均</p>
+                </div>
+            </div>
+        </li>
+        <li class="works-numbers-cards__item">
+            <div class="works-numbers-card">
+                <figure class="works-numbers-card__image">
+                    <img src="./assets/images/common/icon-works-03.png" alt="アイコン">
+                </figure>
+                <div class="works-numbers-card__body">
+                    <p id="box3" class="works-numbers-card__number box"><span class="number">81</span><span class="unit">人</span></p>
+                    <p class="works-numbers-card__label">就職者数</p>
+                </div>
+            </div>
+        </li>
+        <li class="works-numbers-cards__item">
+            <div class="works-numbers-card">
+                <figure class="works-numbers-card__image">
+                    <img src="./assets/images/common/icon-works-04.png" alt="アイコン">
+                </figure>
+                <div class="works-numbers-card__body">
+                    <p id="box4" class="works-numbers-card__number box"><span class="number">24</span></p>
+                    <p class="works-numbers-card__label">業種数</p>
+                </div>
+            </div>
+        </li>
+        <li class="works-numbers-cards__item">
+            <div class="works-numbers-card">
+                <figure class="works-numbers-card__image">
+                    <img src="./assets/images/common/icon-works-05.png" alt="アイコン">
+                </figure>
+                <div class="works-numbers-card__body">
+                    <p id="box5" class="works-numbers-card__number box"><span class="number">99</span><span class="unit">%</span></p>
+                    <p class="works-numbers-card__label">満足度</p>
+                </div>
+            </div>
+        </li>
+        <li class="works-numbers-cards__item">
+            <div class="works-numbers-card">
+                <figure class="works-numbers-card__image">
+                    <img src="./assets/images/common/icon-works-06.png" alt="アイコン">
+                </figure>
+                <div class="works-numbers-card__body">
+                    <p id="box6" class="works-numbers-card__number box"><span class="number">1998</span></p>
+                    <p class="works-numbers-card__label">設立</p>
+                </div>
+            </div>
+        </li>
+    </ul>
+  </div>
+</section>
+
+
           </div>
         </div>
         <!-- お問い合わせ  -->
@@ -371,8 +372,12 @@
               </p>
               <!-- アイコン -->
               <div class="footer__icon-wrapper">
-                <img src="./assets/images/common/icon-mail.png" alt="メールアイコン">
-                <img src="./assets/images/common/icon-instagram.png" alt="インスタグラムアイコン">
+                <a href="#">
+                  <img src="./assets/images/common/icon-mail.png" alt="メールアイコン">
+                </a>
+                <a href="#">
+                  <img src="./assets/images/common/icon-instagram.png" alt="インスタグラムアイコン">
+                </a>
               </div>
             </div>
             <!-- フッターナビ -->
@@ -410,5 +415,8 @@
       </footer>
     </div><!-- main__container -->
   </div><!-- body__container -->
+  <!-- カウンター実装用スクリプト -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
+  <script src="js/9-5-1.js"></script>
 </body>
 </html>

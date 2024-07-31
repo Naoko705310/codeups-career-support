@@ -1,11 +1,13 @@
 @use "global" as *;
 
 .page-service {
-  margin-top: rem(301);
-  // margin-top: rem(-366);
+  // margin-top: rem(301);
+  margin-top: rem(-366);//667-301
+  position: relative;
+  z-index: 3;
   @include mq(md) {
-    margin-top: rem(492);
-    // margin-top: rem(-276);
+    // margin-top: rem(492);
+    margin-top: rem(-276);
   }
 }
 

@@ -1,9 +1,13 @@
 @use "global" as *;
 
 .page-information {
-  margin-top: rem(301);
+  margin-top: rem(-366);//667-301
+  position: relative;
+  z-index: 3;
+  // margin-top: rem(301);
   @include mq(md) {
-    margin-top: rem(490);
+    margin-top: rem(-278);//768-490
+    // margin-top: rem(490);
   }
 }
 

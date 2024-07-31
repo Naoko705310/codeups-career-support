@@ -107,15 +107,18 @@
 }
 
 .top-about-us__text {
+  margin-top: rem(40);
+  @include mq(md) {
+    margin-top: 0;
+  }
+}
+
+.top-about-us__text p {
   font-family: $base-font-family;
   font-size: rem(14);
   color: #1f1f1f;
   font-weight: $normal;
   line-height: 1.5;
-  margin-top: rem(40);
-  @include mq(md) {
-    margin-top: 0;
-  }
 }
 
 .top-about-us__button {

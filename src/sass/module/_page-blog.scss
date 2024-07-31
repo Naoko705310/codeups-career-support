@@ -3,9 +3,13 @@
 // 下層ページ ブログ
 
 .page-blog {
-  margin-top: rem(301);
+  margin-top: rem(-366);//667-301
+  position: relative;
+  z-index: 3;
+  // margin-top: rem(301);
   @include mq(md) {
-    margin-top: rem(492);
+    margin-top: rem(-276);//768-492
+    // margin-top: rem(492);
   }
 }
 

@@ -12,13 +12,20 @@
   text-align: center;
   padding: rem(12) 0;
   background-color: $color-accent;
+  border: 1px solid $color-accent;
   border-radius: rem(30);
   transition: .3s;
+}
+
+.button:hover {
+  background-color: $white;
+  color: $color-accent;
 }
 
 .button span {
   padding-right: rem(42);//16+26
   position: relative;
+  display: inline-block;
 }
 
 .button span::first-letter {
@@ -39,15 +46,33 @@
   transform: translateY(-50%);
 }
 
+.button:hover span:after {
+  background-image: url(../images/common/icon-arrow-button-hover.png);
+}
+
+// 緑色のボタン
 .button--green {
   background-color: $color-logo;
+  border: 1px solid $color-logo;
+}
+
+.button--green:hover {
+  background-color: $white;
+  color: $color-logo;
 }
 
 .button--green span:after {
   background-image: url(../images/common/icon-arrow-button-green.png);
 }
 
-// sp-navのお問い合わせボタン
+.button--green:hover span:after {
+  background-image: url(../images/common/icon-arrow-button-green.png);
+  border: 1px solid $color-logo;
+  border-radius: 50%;
+}
+
+
+// sp-navのお問い合わせボタン（デザイン違い・オレンジ）
 .button--sp-nav {
   width: rem(345);
   filter: drop-shadow(4px 4px 0 rgba(0, 0, 0, 0.1)); 
@@ -65,10 +90,16 @@
   padding: 0;
 }
 
+.button--sp-nav:hover span {
+  color: $color-accent;
+}
+
 .button--sp-nav span:after {
   display: none;
 }
 
+
+// 確認するボタン（お問い合わせページ）
 .button--contact {
   width: rem(186);
 }

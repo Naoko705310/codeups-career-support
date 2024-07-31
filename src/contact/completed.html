@@ -36,7 +36,7 @@
   <link rel="stylesheet" href="../assets/css/style.css">
   <!-- JavaScript -->
   <!-- バージョン確認 -->
-  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   <script defer src="../assets/js/script.js"></script>
 </head>
 <body>
@@ -86,7 +86,7 @@
                 </a>
               </li>
               <li class="sp-nav__item">
-                <a href="#contact">お問い合わせ
+                <a href="#page-contact">お問い合わせ
                   <span>contact</span>
                 </a>
               </li>
@@ -94,7 +94,7 @@
           </nav>
           <!-- ボタン（お問い合わせ） -->
           <div class="sp-nav__button">
-            <a href="#contact" class="button button--sp-nav">
+            <a href="#page-contact" class="button button--sp-nav">
               お問い合わせ
               <span>contact</span>
             </a>
@@ -129,7 +129,7 @@
               </a>
             </li>
             <li class="pc-nav__item">
-              <a href="#contact">お問い合わせ
+              <a href="#page-contact">お問い合わせ
                 <span>contact</span>
               </a>
             </li>
@@ -154,74 +154,70 @@
         <section id="page-contact-completed" class="page-contact-completed">
           <div class="page-contact-completed__inner inner">
             <div class="page-contact-completed__contact-form">
-              <div class="contact-form contact-form-completed">
-                <form action="your_submission_endpoint" method="post">
+              <!--  お問い合わせフォーム -->
+              <!-- 要確認　サーバーアップ後に挙動確認 -->
+                <form action="mail.php" method="post" id="confirm-form" class="contact-form contact-form__layout contact-form-completed">
                   <dl class="contact-form__item">
                     <dt>
-                      <p class="contact-form__label contact-form__label--required">
+                      <label class="contact-form__label contact-form__label--required">
                         お名前
-                      </p>
+                      </label>
                     </dt>
                     <dd>
-                      <p class="contact-form__input-area">
-                        山田　太郎
-                      </p>
+                      <p class="contact-form__input-area"><?php echo htmlspecialchars($_POST['name']); ?></p>
+                      <input type="hidden" name="name" value="<?php echo htmlspecialchars($_POST['name']); ?>">
                     </dd>
                   </dl>
                   <dl class="contact-form__item">
                     <dt>
-                      <p class="contact-form__label">
+                      <label class="contact-form__label">
                         住所
-                      </p>
+                      </label>
                     </dt>
                     <dd>
-                      <p class="contact-form__input-area">
-                        大阪府堺
-                      </p>
+                      <p class="contact-form__input-area"><?php echo htmlspecialchars($_POST['address']); ?></p>
+                      <input type="hidden" name="address" value="<?php echo htmlspecialchars($_POST['address']); ?>">
                     </dd>
                   </dl>
                   <dl class="contact-form__item">
                     <dt>
-                      <p class="contact-form__label contact-form__label--required">
+                      <label class="contact-form__label contact-form__label--required">
                         メールアドレス
-                      </p>
+                      </label>
                     </dt>
                     <dd>
-                      <p class="contact-form__input-area">
-                        info@abc.com
-                      </p>
+                      <p class="contact-form__input-area"><?php echo htmlspecialchars($_POST['Email']); ?></p>
+                      <input type="hidden" name="Email" value="<?php echo htmlspecialchars($_POST['Email']); ?>">
                     </dd>
                   </dl>
                   <dl class="contact-form__item">
                     <dt>
-                      <p class="contact-form__label">
+                      <label class="contact-form__label">
                         電話番号
-                      </p>
+                      </label>
                     </dt>
                     <dd>
-                      <p class="contact-form__input-area">
-                        000-0000-0000
-                      </p>
+                      <p class="contact-form__input-area"><?php echo htmlspecialchars($_POST['tel']); ?></p>
+                      <input type="hidden" name="tel" value="<?php echo htmlspecialchars($_POST['tel']); ?>">
                     </dd>
                   </dl>
                   <dl class="contact-form__item">
                     <dt>
-                      <p class="contact-form__label">
+                      <label class="contact-form__label">
                         お問い合わせ詳細
-                      </p>
+                      </label>
                     </dt>
                     <dd>
-                      <p class="contact-form__text-area">
-                        ここにお問い合わせ内容が入ります。
-                      </p>
+                      <p class="contact-form__text-area"><?php echo nl2br(htmlspecialchars($_POST['message'])); ?></p>
+                      <input type="hidden" name="message" value="<?php echo htmlspecialchars($_POST['message']); ?>">
                     </dd>
                   </dl>
                   <div class="contact-form-completed__button-wrapper">
                     <!-- 訂正するボタン -->
                     <div class="contact-form-completed__button-revise">
-                      <a href="../contact/index.html" class="button button--green button--contact button--revise">
+                      <button class="button button--green button--contact button--revise" type="button" onclick="history.back();">
                         <span>訂正する</span>
-                      </a>
+                      </button>
                     </div>
                     <!-- 送信するボタン -->
                     <div class="contact-form-completed__button-submit">
@@ -231,7 +227,6 @@
                     </div>
                   </div>
                 </form>
-              </div>
             </div>
           </div>
         </section>
@@ -295,8 +290,12 @@
               </p>
               <!-- アイコン -->
               <div class="footer__icon-wrapper">
-                <img src="../assets/images/common/icon-mail.png" alt="メールアイコン">
-                <img src="../assets/images/common/icon-instagram.png" alt="インスタグラムアイコン">
+                <a href="#">
+                  <img src="../assets/images/common/icon-mail.png" alt="メールアイコン">
+                </a>
+                <a href="#">
+                  <img src="../assets/images/common/icon-instagram.png" alt="インスタグラムアイコン">
+                </a>
               </div>
             </div>
             <!-- フッターナビ -->

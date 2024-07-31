@@ -1,11 +1,11 @@
 @use "global" as *;
 
 
-.about-us-carrier-support__container {
+.carrier-support__container {
 
 }
 
-.about-us-carrier-support__contents-wrapper {
+.carrier-support__contents-wrapper {
   @include mq(md) {
     display: grid;
     grid-template-columns: 50% 1fr;
@@ -14,7 +14,7 @@
   }
 }
 
-.about-us-carrier-support__image {
+.carrier-support__image {
   position: relative;
   border-radius: rem(10);
   @include mq(md) {
@@ -22,13 +22,13 @@
   }
 }
 
-.about-us-carrier-support__image::before {
+.carrier-support__image::before {
   content: "";
   display: block;
   padding-top: calc(276 / 345 * 100%);
 }
 
-.about-us-carrier-support__image img {
+.carrier-support__image img {
   width: 100%;
   max-width: 100%;
   height: 100%;
@@ -40,7 +40,7 @@
   border-radius: rem(10);
 }
 
-.about-us-carrier-support__body {
+.carrier-support__body {
   margin-top: rem(24);
   @include mq(md) {
     // width: calc(420 / 960 * 100%);
@@ -48,7 +48,7 @@
   }
 }
 
-// .about-us-carrier-support__title {
+// .carrier-support__title {
 //   font-family: $base-font-family;
 //   font-size: rem(24);
 //   color: $black;
@@ -59,7 +59,7 @@
 //   }
 // }
 
-// .about-us-carrier-support__title span {
+// .carrier-support__title span {
 //   font-family: $base-font-family;
 //   font-size: rem(14);
 //   color: $color-accent;
@@ -71,7 +71,7 @@
 //   }
 // }
 
-.about-us-carrier-support__text {
+.carrier-support__text {
   font-family: $base-font-family;
   font-size: rem(16);
   color: $black;

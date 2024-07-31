@@ -36,7 +36,7 @@
   <link rel="stylesheet" href="./assets/css/style.css">
   <!-- JavaScript -->
   <!-- バージョン確認 -->
-  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   <script defer src="./assets/js/script.js"></script>
 </head>
 <body>
@@ -155,8 +155,8 @@
         <div class="page-about-us">
           <div class="page-about-us__inner inner">
             <!-- 理念 -->
-            <section class="page-about-us__policy about-us-policy">
-              <div class="about-us-policy__container">
+            <section class="page-about-us__policy policy">
+              <div class="policy__container">
                 <div class="page-about-us__section-title section-title">
                   <h2 class="section-title__jp section-title__jp--page-about-us-white">
                     理念
@@ -165,15 +165,15 @@
                     policy
                   </span>
                 </div>
-                <div class="about-us-policy__contents-wrapper">
-                  <figure class="about-us-policy__image">
+                <div class="policy__contents-wrapper">
+                  <figure class="policy__image">
                     <img src="./assets/images/common/page-about-policy.jpg" alt="左に男性、右に女性が二人立っている">
                   </figure>
-                  <div class="about-us-policy__body">
-                    <h3 class="about-us-policy__title">
+                  <div class="policy__body">
+                    <h3 class="policy__title">
                       革新と協力
                     </h3>
-                    <div class="about-us-policy__text">
+                    <div class="policy__text">
                       <p>私たちは革新と協力を重視し、未来を共に築くことに誇りを持っています。持続可能な価値を提供し、変化に柔軟に対応する中で、クライアントとの協力により共に成長し、業界に新たなる道を切り拓きます。<br><br>
                         私たちの理念は、常に進化する環境で先進的なソリューションを提供し、真のパートナーシップを通じて成功と未来を形作ることです。</p>
                     </div>
@@ -182,13 +182,13 @@
               </div>
             </section>
             <!-- キャリアサポートとは -->
-            <section class="page-about-us__carrier-support about-us-carrier-support">
-              <div class="about-us-carrier-support__container">
-                <div class="about-us-carrier-support__contents-wrapper">
-                  <figure class="about-us-carrier-support__image">
+            <section class="page-about-us__carrier-support carrier-support">
+              <div class="carrier-support__container">
+                <div class="carrier-support__contents-wrapper">
+                  <figure class="carrier-support__image">
                     <img src="./assets/images/common/page-about-support.jpg" alt="左にPCを広げてほほえむ男性、右に女性が座っている">
                   </figure>
-                  <div class="about-us-carrier-support__body">
+                  <div class="carrier-support__body">
                     <div class="page-about-us__section-title section-title">
                       <h2 class="section-title__jp section-title__jp--page-about-us">
                         キャリアサポートとは
@@ -197,7 +197,7 @@
                         Carrier support
                       </span>
                     </div>
-                    <div class="about-us-carrier-support__text">
+                    <div class="carrier-support__text">
                       <p>キャリアサポートは、個人が職業的な目標を達成するために提供される支援の総称です。<br><br>
                         スキル開発、求人紹介、キャリアアドバイスなど、個々のニーズに合わせたトータルなサービスを通じて、クライアントが自己成長し、適切な職場での成功を実現するための支援体制を指します。</p>
                     </div>
@@ -207,10 +207,6 @@
             </section>
           </div>
         </div>
-
-
-
-
         <!-- お問い合わせ  -->
         <section class="page-about-us__contact sub-contact">
           <div class="sub-contact__inner inner">
@@ -271,8 +267,12 @@
               </p>
               <!-- アイコン -->
               <div class="footer__icon-wrapper">
-                <img src="./assets/images/common/icon-mail.png" alt="メールアイコン">
-                <img src="./assets/images/common/icon-instagram.png" alt="インスタグラムアイコン">
+                <a href="#">
+                  <img src="./assets/images/common/icon-mail.png" alt="メールアイコン">
+                </a>
+                <a href="#">
+                  <img src="./assets/images/common/icon-instagram.png" alt="インスタグラムアイコン">
+                </a>
               </div>
             </div>
             <!-- フッターナビ -->

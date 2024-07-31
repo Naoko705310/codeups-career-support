@@ -36,7 +36,7 @@
   <link rel="stylesheet" href="./assets/css/style.css">
   <!-- JavaScript -->
   <!-- バージョン確認 -->
-  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   <script defer src="./assets/js/script.js"></script>
 </head>
 <body>
@@ -162,43 +162,43 @@
         <section id="top-service" class="top-service">
           <div class="top-service__inner inner">
             <!-- サービスメニュー -->
-            <ul class="top-service__service-menu service-menu__items">
-              <li class="service-menu-cards__item">
-                <div class="service-menu-card">
-                  <figure class="service-menu-card__image">
+            <ul class="top-service__items service-menus">
+              <li class="service-menus__item">
+                <div class="service-menu">
+                  <figure class="service-menu__image">
                     <img src="./assets/images/common/icon-top-fv-01.png" alt="両手でサポートしているアイコン">
                   </figure>
-                  <h3 class="service-menu-card__title">
+                  <h3 class="service-menu__title">
                     徹底的なサポート
                   </h3>
-                  <p class="service-menu-card__text">
+                  <p class="service-menu__text">
                     当社の徹底的なキャリアサポートは、専門家による個別メンタリング、必要なスキルのトレーニング提供、適切な求人の紹介、個々のニーズに基づくキャリアプランの策定、そして定期的な進捗モニタリングを含みます。 
                   </p>
                 </div>
               </li>
-              <li class="service-menu-cards__item">
-                <div class="service-menu-card">
-                  <figure class="service-menu-card__image">
+              <li class="service-menus__item">
+                <div class="service-menu">
+                  <figure class="service-menu__image">
                     <img src="./assets/images/common/icon-top-fv-02.png" alt="鉛筆のアイコン">
                   </figure>
-                  <h3 class="service-menu-card__title">
+                  <h3 class="service-menu__title">
                     スキル支援
                   </h3>
-                  <p class="service-menu-card__text">
+                  <p class="service-menu__text">
                     スキル支援では、クライアントの個別スキルを評価し、専門的なトレーニングを提供。
                     業界要件に沿った実践的なスキル強化を重視し、成長に不可欠なスキルを焦点化して支援いたします。
                   </p>
                 </div>
               </li>
-              <li class="service-menu-cards__item">
-                <div class="service-menu-card">
-                  <figure class="service-menu-card__image">
+              <li class="service-menus__item">
+                <div class="service-menu">
+                  <figure class="service-menu__image">
                     <img src="./assets/images/common/icon-top-fv-03.png" alt="PCのアイコン">
                   </figure>
-                  <h3 class="service-menu-card__title">
+                  <h3 class="service-menu__title">
                     オリジナルカリキュラム
                   </h3>
-                  <p class="service-menu-card__text">
+                  <p class="service-menu__text">
                     当社のオリジナルカリキュラムは、参加者のニーズに合わせた独自のトレーニング体系です。
                     専門家による指導のもと、実践的でリアルな業務シナリオに焦点を当て、即戦力となるスキルを磨きます。
                   </p>
@@ -229,11 +229,13 @@
                 <figure class="top-about-us__image">
                   <img src="./assets/images/common/about-top.jpg" alt="男性が男女に説明している画像">
                 </figure>
-                <p class="top-about-us__text">
-                  私たちは革新的なソリューションと専門知識を提供し、クライアントの成功を支えるプロフェッショナルなチームです。<br><br>
-                  顧客のニーズを理解し、柔軟かつ効果的なアプローチで解決策を提供します。卓越したスキル強化やキャリアサポートを通じて、個々の成長と組織の発展を促進します。<br><br>
-                  常に変化する環境に適応し、持続可能な価値を提供することをミッションに、協力と信頼に基づくパートナーシップを築いています。
-                </p>
+                <div class="top-about-us__text">
+                  <p>
+                    私たちは革新的なソリューションと専門知識を提供し、クライアントの成功を支えるプロフェッショナルなチームです。<br><br>
+                    顧客のニーズを理解し、柔軟かつ効果的なアプローチで解決策を提供します。卓越したスキル強化やキャリアサポートを通じて、個々の成長と組織の発展を促進します。<br><br>
+                    常に変化する環境に適応し、持続可能な価値を提供することをミッションに、協力と信頼に基づくパートナーシップを築いています。
+                  </p>
+                </div>
               </div>
               <!-- ボタン（基本） -->
               <div class="top-about-us__button">
@@ -255,8 +257,8 @@
                 archievement
               </span>
             </div>
-            <ul class="top-archievement__items">
-              <li class="top-archievement__item">
+            <ul class="top-archievement__items achievement-cards">
+              <li class="archievement-cards__item">
                 <div class="archievement-card archievement-card--01">
                   <div class="archievement-card__heading">
                     <figure class="archievement-card__image">
@@ -284,7 +286,7 @@
                   </div>
                 </div>
               </li>
-              <li class="top-archievement__">
+              <li class="archievement-cards__item">
                 <div class="archievement-card archievement-card--02">
                   <div class="archievement-card__heading">
                     <figure class="archievement-card__image">
@@ -312,7 +314,7 @@
                   </div>
                 </div>
               </li>
-              <li class="top-archievement__">
+              <li class="archievement-cards__item">
                 <div class="archievement-card archievement-card--03">
                   <div class="archievement-card__heading">
                     <figure class="archievement-card__image">
@@ -340,7 +342,7 @@
                   </div>
                 </div>
               </li>
-              <li class="top-archievement__">
+              <li class="archievement-cards__item">
                 <div class="archievement-card archievement-card--04">
                   <div class="archievement-card__heading">
                     <figure class="archievement-card__image">
@@ -394,7 +396,7 @@
                   <img src="./assets/images/common/information-top-01.jpg" alt="机上のiMac">
                 </figure>
                 <div class="top-information__body">
-                  <dl class="top-information__information">
+                  <dl class="top-information__details">
                     <dt class="top-information__title">
                       name
                     </dt>
@@ -402,7 +404,7 @@
                       Code Ups キャリアパートナーズ
                     </dd>
                   </dl>
-                  <dl class="top-information__information">
+                  <dl class="top-information__details">
                     <dt class="top-information__title">
                       access
                     </dt>
@@ -410,7 +412,7 @@
                       〒540-0002 大阪府大阪市中央区大阪城1-1
                     </dd>
                   </dl>
-                  <dl class="top-information__information">
+                  <dl class="top-information__details">
                     <dt class="top-information__title">
                       tel/fax
                     </dt>
@@ -418,7 +420,7 @@
                       111-111-1234/111-111-1235
                     </dd>
                   </dl>
-                  <dl class="top-information__information">
+                  <dl class="top-information__details">
                     <dt class="top-information__title">
                       e-mail
                     </dt>
@@ -450,7 +452,7 @@
             </div>
             <ul class="top-blog__items">
               <li class="top-blog__item">
-                <div class="top-blog-card">
+                <a href="#" class="top-blog-card">
                   <figure class="top-blog-card__image">
                     <img src="./assets/images/common/blog-top-01.jpg" alt="女性が男性に説明している画像">
                   </figure>
@@ -460,10 +462,10 @@
                       キャリア革命、未来を切り拓く成功戦略
                     </h4>
                   </div>
-                </div>
+                </a>
               </li>
               <li class="top-blog__item">
-                <div class="top-blog-card">
+                <a href="#" class="top-blog-card">
                   <figure class="top-blog-card__image">
                     <img src="./assets/images/common/blog-top-02.jpg" alt="5人で会議をしている画像">
                   </figure>
@@ -473,10 +475,10 @@
                       スキルの舞台裏、キャリアの階段を上る冒険
                     </h4>
                   </div>
-                </div>
+                </a>
               </li>
               <li class="top-blog__item">
-                <div class="top-blog-card">
+                <a href="#" class="top-blog-card">
                   <figure class="top-blog-card__image">
                     <img src="./assets/images/common/blog-top-03.jpg" alt="3人で会議をしている画像">
                   </figure>
@@ -486,7 +488,7 @@
                       明日のリーダーへの道、トレンドを読み解くキャリアガイド
                     </h4>
                   </div>
-                </div>
+                </a>
               </li>
             </ul>
             <!-- ボタン（基本） -->
@@ -557,8 +559,12 @@
               </p>
               <!-- アイコン -->
               <div class="footer__icon-wrapper">
-                <img src="./assets/images/common/icon-mail.png" alt="メールアイコン">
-                <img src="./assets/images/common/icon-instagram.png" alt="インスタグラムアイコン">
+                <a href="#">
+                  <img src="./assets/images/common/icon-mail.png" alt="メールアイコン">
+                </a>
+                <a href="#">
+                  <img src="./assets/images/common/icon-instagram.png" alt="インスタグラムアイコン">
+                </a>
               </div>
             </div>
             <!-- フッターナビ -->

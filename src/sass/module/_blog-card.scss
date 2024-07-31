@@ -5,6 +5,7 @@
 .blog-card__image {
   position: relative;
   border-radius: rem(5);
+  overflow: hidden;
 }
 
 .blog-card__image::before {
@@ -26,6 +27,11 @@
   transform: translate(-50%, -50%);
   object-fit: cover;
   border-radius: rem(5);
+  transition: transform 0.5s ease; 
+}
+
+.blog-card__image:hover img {
+  transform: translate(-50%, -50%) scale(1.2);
 }
 
 .blog-card__heading {
