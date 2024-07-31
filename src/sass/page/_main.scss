@@ -1,14 +1,8 @@
 @use "global" as *;
 
+// headerメニューを左に固定している分の余白
 .main__container {
   @include mq(md) {
     margin-left: rem(200);
-  }
-}
-
-.main__container--thanks {
-  height: rem(667);
-  @include mq(md) {
-    height: rem(768);
   }
 }
