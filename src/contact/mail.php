@@ -385,9 +385,7 @@ else if(($jumpPage == 1 && $sendmail == 1) || $confirmDsp == 0) {
 	if($empty_flag == 1){ ?>
 <div align="center"><h4>入力にエラーがあります。下記をご確認の上「戻る」ボタンにて修正をお願い致します。</h4><div style="color:red"><?php echo $errm; ?></div><br /><br /><input type="button" value=" 前画面に戻る " onClick="history.back()"></div>
 <?php 
-	}else{ 		echo "Redirecting to: " . $thanksPage; // デバッグ用
-		header("Location: ".$thanksPage); 
-		exit(); // リダイレクト後にスクリプトの実行を停止 }
+	}else{ header("Location: ".$thanksPage); }
 }
 
 // 以下の変更は知識のある方のみ自己責任でお願いします。
