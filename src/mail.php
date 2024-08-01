@@ -84,7 +84,7 @@ $confirmDsp = 1;
 $jumpPage = 1;
 
 // 送信完了後に表示するページURL（上記で1を設定した場合のみ）※httpから始まるURLで指定ください。（相対パスでも基本的には問題ないです）
-$thanksPage = "http://naoko-test.site/contact/thanks.html";
+$thanksPage = "https://naoko-test.site/contact/thanks.html";
 
 // 必須入力項目を設定する(する=1, しない=0)
 $requireCheck = 0;
