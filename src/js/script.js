@@ -79,11 +79,13 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 
     // フォームデータをローカルストレージに保存
     formData.forEach(function(item) {
+      console.log('Saving to localStorage:', item.name, item.value); // デバッグ用のログ
       localStorage.setItem(item.name, item.value);
     });
 
     // completed.htmlに移動
     window.location.href = 'completed.html';
-  });
+});
+
 
 }); // この閉じタグは消さない！！！！！
