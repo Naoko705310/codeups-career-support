@@ -155,73 +155,72 @@
           <div class="page-contact-completed__inner inner">
             <div class="page-contact-completed__contact-form">
               <!--  お問い合わせフォーム -->
-              <!-- 要確認　サーバーアップ後に挙動確認 -->
-                <form action="mail.php" method="post" id="confirm-form" class="contact-form contact-form__layout contact-form-completed">
-                  <dl class="contact-form__item">
-                    <dt>
-                      <label class="contact-form__label contact-form__label--required">
-                        お名前
-                      </label>
-                    </dt>
-                    <dd>
-                      <p id="name" class="contact-form__input-area"></p>
-                    </dd>
-                  </dl>
-                  <dl class="contact-form__item">
-                    <dt>
-                      <label class="contact-form__label">
-                        住所
-                      </label>
-                    </dt>
-                    <dd>
-                      <p id="address" class="contact-form__input-area"></p>
-                    </dd>
-                  </dl>
-                  <dl class="contact-form__item">
-                    <dt>
-                      <label class="contact-form__label contact-form__label--required">
-                        メールアドレス
-                      </label>
-                    </dt>
-                    <dd>
-                      <p id="Email" class="contact-form__input-area"></p>
-                    </dd>
-                  </dl>
-                  <dl class="contact-form__item">
-                    <dt>
-                      <label class="contact-form__label">
-                        電話番号
-                      </label>
-                    </dt>
-                    <dd>
-                      <p id="tel" class="contact-form__input-area"></p>
-                    </dd>
-                  </dl>
-                  <dl class="contact-form__item">
-                    <dt>
-                      <label class="contact-form__label">
-                        お問い合わせ詳細
-                      </label>
-                    </dt>
-                    <dd>
-                      <p id="message" class="contact-form__text-area"></p>
-                    </dd>
-                  </dl>
-                  <div class="contact-form-completed__button-wrapper">
-                    <!-- 訂正するボタン -->
-                    <div class="contact-form-completed__button-revise">
-                      <button class="button button--green button--contact button--revise" type="button" onclick="history.back();">
-                        <span>訂正する</span>
-                      </button>
-                    </div>
-                    <!-- 送信するボタン -->
-                    <div class="contact-form-completed__button-submit">
-                      <button id="js-submit-completed" class="button button--green button--contact" type="submit">
-                        <span>送信する</span>
-                      </button>
-                    </div>
+              <form action="mail.php" method="post" id="confirm-form" class="contact-form contact-form__layout contact-form-completed">
+                <dl class="contact-form__item">
+                  <dt>
+                    <label class="contact-form__label contact-form__label--required">
+                      お名前
+                    </label>
+                  </dt>
+                  <dd>
+                    <input type="text" id="name" name="name" class="contact-form__input-area" value="" readonly>
+                  </dd>
+                </dl>
+                <dl class="contact-form__item">
+                  <dt>
+                    <label class="contact-form__label">
+                      住所
+                    </label>
+                  </dt>
+                  <dd>
+                    <input type="text" id="address" name="address" class="contact-form__input-area" value="" readonly>
+                  </dd>
+                </dl>
+                <dl class="contact-form__item">
+                  <dt>
+                    <label class="contact-form__label contact-form__label--required">
+                      メールアドレス
+                    </label>
+                  </dt>
+                  <dd>
+                    <input type="email" id="Email" name="Email" class="contact-form__input-area" value="" readonly>
+                  </dd>
+                </dl>
+                <dl class="contact-form__item">
+                  <dt>
+                    <label class="contact-form__label">
+                      電話番号
+                    </label>
+                  </dt>
+                  <dd>
+                    <input type="text" id="tel" name="tel" class="contact-form__input-area" value="" readonly>
+                  </dd>
+                </dl>
+                <dl class="contact-form__item">
+                  <dt>
+                    <label class="contact-form__label">
+                      お問い合わせ詳細
+                    </label>
+                  </dt>
+                  <dd>
+                    <textarea id="message" name="message" class="contact-form__text-area" readonly></textarea>
+                  </dd>
+                </dl>
+                <div class="contact-form-completed__button-wrapper">
+                  <!-- 訂正するボタン -->
+                  <div class="contact-form-completed__button-revise">
+                    <button class="button button--green button--contact button--revise" type="button" onclick="history.back();">
+                      <span>訂正する</span>
+                    </button>
                   </div>
-                </form>
+                  <!-- 送信するボタン -->
+                  <div class="contact-form-completed__button-submit">
+                    <button id="js-submit-completed" class="button button--green button--contact" type="submit">
+                      <span>送信する</span>
+                    </button>
+                  </div>
+                </div>
+              </form>
             </div>
           </div>
         </section>
@@ -336,11 +335,11 @@
   <script>
     $(document).ready(function() {
         // ローカルストレージからデータを取得して表示
-        $('#name').text(localStorage.getItem('name'));
-        $('#address').text(localStorage.getItem('address'));
-        $('#Email').text(localStorage.getItem('Email'));
-        $('#tel').text(localStorage.getItem('tel'));
-        $('#message').text(localStorage.getItem('message'));
+        $('#name').val(localStorage.getItem('name'));
+        $('#address').val(localStorage.getItem('address'));
+        $('#Email').val(localStorage.getItem('Email'));
+        $('#tel').val(localStorage.getItem('tel'));
+        $('#message').val(localStorage.getItem('message'));
   
         // データを表示後、ローカルストレージをクリア
         localStorage.clear();

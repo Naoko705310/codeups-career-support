@@ -12,11 +12,20 @@ $site_top = "https://www.naoko-test.site/career-support";
 $thanksPage = "https://naoko-test.site/career-support/contact/thanks.html";
 
 // フォームから送信されたデータを取得
-$name = isset($_POST['name']) ? htmlspecialchars($_POST['name']) : '';
-$email = isset($_POST['Email']) ? htmlspecialchars($_POST['Email']) : '';
-$address = isset($_POST['address']) ? htmlspecialchars($_POST['address']) : '';
-$tel = isset($_POST['tel']) ? htmlspecialchars($_POST['tel']) : '';
-$message = isset($_POST['message']) ? htmlspecialchars($_POST['message']) : '';
+$name = isset($_POST['name']) ? htmlspecialchars($_POST['name'], ENT_QUOTES, 'UTF-8') : '';
+$email = isset($_POST['Email']) ? filter_var($_POST['Email'], FILTER_VALIDATE_EMAIL) : '';
+$address = isset($_POST['address']) ? htmlspecialchars($_POST['address'], ENT_QUOTES, 'UTF-8') : '';
+$tel = isset($_POST['tel']) ? htmlspecialchars($_POST['tel'], ENT_QUOTES, 'UTF-8') : '';
+$message = isset($_POST['message']) ? htmlspecialchars($_POST['message'], ENT_QUOTES, 'UTF-8') : '';
+
+// デバッグ情報を表示（テスト時にのみ使用、運用時にはコメントアウトまたは削除）
+/*
+echo "Name: $name<br>";
+echo "Email: $email<br>";
+echo "Address: $address<br>";
+echo "Tel: $tel<br>";
+echo "Message: $message<br>";
+*/
 
 // メールの件名
 $subject = "ホームページのお問い合わせ";
@@ -29,7 +38,7 @@ $body .= "電話番号: $tel\n";
 $body .= "お問い合わせ詳細:\n$message\n";
 
 // メールのヘッダー
-$headers = "From: " . $email . "\r\n";
+$headers = "From: " . $to . "\r\n";
 $headers .= "Reply-To: " . $email . "\r\n";
 
 // メール送信処理
